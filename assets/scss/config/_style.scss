@@ -1,0 +1,227 @@
+* {
+    font-size: $font-m;
+    font-family: $fontFamily-NotoSansTC;
+    
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+      color: inherit;
+    }
+}
+button {
+    border: none;
+    background-color: inherit;
+    padding: 0;
+}
+ul{
+    padding: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+// -------------------------- 收藏按鈕
+.favoriteBTN{
+  width: 35px; height: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute; top: 5px; right: 5px;
+  border: #F9F1E8 solid 1px;
+  span{
+    width: 32px; height: 32px;
+    background-image: url(../images/icon_favorite.svg);
+    background-size: 100% auto;
+    background-position: left bottom -32px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &.active span{
+    background-position: left bottom;
+    animation: heartbeat 1s linear;
+  }
+  
+  &:hover span{
+    background-position: left bottom;
+  }
+  
+  
+}
+
+
+// 時態變化------price
+.--fast{color: $deliveryColor-fast;}
+.--normal{color: $deliveryColor-normal;}
+.--preorder{color: $deliveryColor-preorder;}
+
+// 時態變化------BTN
+.deliveryBTN--fast{
+  width: 32px; height: 32px;
+  background-image: url(../images/icon_delivery-fast.svg);
+  background-size: 100% auto;
+  background-position: left top;
+  border-radius: 50%;
+  margin: 0 5px;
+  position: relative; bottom: -5px;
+  transition: 0.4s;
+  &:hover{
+    background-color: $deliveryColor-fast;
+    background-position: left bottom;
+  }
+}
+.deliveryBTN--normal{
+  width: 32px; height: 32px;
+  background-image: url(../images/icon_delivery-normal.svg);
+  background-size: 100% auto;
+  background-position: left top;
+  border-radius: 50%;
+  margin: 0 5px;
+  position: relative; bottom: -5px;
+  transition: 0.4s;
+  &:hover{
+    background-color: $deliveryColor-normal;
+    background-position: left bottom;
+  }
+}
+.deliveryBTN--preorder{
+  width: 32px; height: 32px;
+  background-image: url(../images/icon_delivery-preorder.svg);
+  background-size: 100% auto;
+  background-position: left top;
+  border-radius: 50%;
+  margin: 0 5px;
+  position: relative; bottom: -5px;
+  transition: 0.4s;
+  &:hover{
+    background-color: $deliveryColor-preorder;
+    background-position: left bottom;
+  }
+}
+
+// 下拉式選單
+.select-box {
+    position: relative;
+    display: block;
+    width: 100%; height: 50px;
+    margin: 0 auto;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #60666d;
+    @include pad{
+        width: 33%;
+        
+    }
+    
+    &__current {
+        height: 100%;
+      position: relative;
+      // box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+      cursor: pointer;
+      outline: none;
+      overflow: hidden;
+      
+      &:focus {
+        & + .select-box__list {
+          opacity: 1;
+  
+          // We have to set "animation-name: none;" to make the list visible (read below how it works)
+  
+          animation-name: none;
+          
+          .select-box__option {
+            cursor: pointer;
+          }
+        }
+        
+        .select-box__icon {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+    }
+    
+    &__icon {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      width: 20px;
+      opacity: 0.3;
+      transition: 0.2s ease;
+    }
+    
+    &__value {
+      display: flex;
+    }
+    
+    &__input {
+      display: none;
+      
+      &:checked + .select-box__input-text {
+        display: block;
+      }
+      
+    }
+    
+    &__input-text {
+      display: none;
+      width: 100%;
+      margin: 0;
+      padding: 5px;
+      background-color: transparent;
+      line-height: 40px;
+      height: 50px;
+      vertical-align: middle;
+    }
+    
+    &__list {
+      position: absolute;
+      width: 100%;
+      padding: 0;
+      list-style: none;
+      opacity: 0;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      border: solid $BGColor-labelLight 1px;
+      z-index: 999;
+      
+      // We need to use animation with delay.
+      // Otherwise the click event will not have time to run on label, because this element disapears immediately when .select-box__current element loses the focus.
+      // This delay will not be noticed because we set "opacity" to "0".
+      // We also use "animation-fill-mode: forwards" to make the list stay hidden.
+      
+      animation-name: HideList;
+      animation-duration: 0.5s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: step-start;
+      box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+    }
+    
+    &__option {
+      display: block;
+      padding: 10px;
+      background-color: #fff;
+      
+      &:hover,
+      &:focus {
+        color: $fontColor-primary;
+        background-color: #fbfbfb;
+      }
+      & span{
+        display: inline-block;
+        color: $fontColor-light;
+        padding-left: 10px;
+      }
+    }
+  }
+  
+  @keyframes HideList {
+    from {
+      transform: scaleY(1);
+    }
+    to {
+      transform: scaleY(0);
+    }
+  }

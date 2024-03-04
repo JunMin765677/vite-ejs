@@ -1,0 +1,1549 @@
+.index-title {
+  font-size: 100px;
+}
+
+// 由小到大
+// layout
+.layout__doubleColumn{
+  width: 100%;
+  @include max-width;
+  padding-top: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex; gap: 30px; align-items: stretch;
+  margin: auto;
+  @include largepad{
+    flex-direction: column;
+    
+  }
+  @include desk{
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2%;
+  }
+  @include largedesk{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+// B-Carousel
+.B-Carousel{
+  @include max-width;
+  width: 100%; height: auto;
+  margin: auto;
+  // z-index: -1;
+  .item{
+    display: block;
+    img{
+      vertical-align: middle;
+    }
+
+    .carousel-img--desk{
+      display: none;
+      @include largepad{
+        display: block;
+      }
+    }
+    .carousel-img--mobile{
+      @include largepad{
+        display: none;
+      }
+    }
+  }
+  .owl-nav{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    // transform: translateY(-50%);
+    justify-content: space-between;
+    @include largepad{
+      display: flex;
+    }
+    button{
+      width: 4rem; height: 4rem;
+      opacity: 0.5;
+      transition: 0.4s;
+      span{
+        width: 100%; height: 4rem;
+        color: transparent;
+        font-size: 0px;
+        font-weight: 100;
+        display: inline-block;
+        line-height: 4rem;
+        background-image: url(../images/icon_chevron.svg);
+        background-size: 200% auto;
+        background-position: right top;
+      }
+      &.owl-prev{
+        &:hover{
+          background-color: rgba(227, 224, 224, 0.3);
+          backdrop-filter: blur(5px);
+          opacity: 1;
+        }
+        span{
+          background-position: right bottom;
+        }
+      }
+      &.owl-next{
+        &:hover{
+          background-color: rgba(227, 224, 224, 0.3);
+          backdrop-filter: blur(5px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .owl-dots{
+    .owl-dot.active{
+      span{
+        background-color: $commonColor-primary;
+      }
+    }
+    @include largepad{
+      position: absolute;
+      bottom: 10px; right: 20px;
+    }
+  }
+}
+// -------------------- C-textBoard
+.C-textBoard{
+  width: 100%; height: auto;
+  padding: 0 1rem;
+  @include largepad{
+    width: 100%; 
+    
+    padding: 0;
+  }
+  @include desk{
+    width: 350px;
+    // display: flex;
+  }
+  
+  &__title{
+    width: 100%; height: 50px;
+    background-color: $BGColor-labelDark;
+    font-size: $font-l * 1.2;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1rem;
+    line-height: 50px;
+  }
+  &__lists{
+    width: 100%; 
+    height: 100%;
+    .owl-dots{
+      .owl-dot.active{
+        span{
+          background-color: $commonColor-primary;
+        }
+      }
+    }
+    
+  }
+  &__list{
+    width: 100%; height: auto;
+    padding-top: 5px;
+    @include desk{
+      width: 350px;
+    }
+  }
+  &__item{
+    width: 100%; height: 47px;
+    padding: 5px 0;
+    display: flex;
+    gap: 5px;
+    span{
+      font-size: $font-l;
+      display: inline-block;
+      background-color: $commonColor-primary;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    a{
+      width: 100px; 
+      font-size: $font-m;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex-grow: 1;
+      line-height: 37px;
+      &:hover{
+        color: $commonColor-primary;
+        font-weight: 500;
+        
+      }
+    }
+    &::after{
+      content: '';
+      width: 24px; height: 24px;
+      background-image: url(../images/icon_chevron_gray.svg);
+      background-size: 200% auto;
+      background-position: right top;
+      margin: auto;
+      @include desk{
+        display: none;
+        
+      }
+    }
+    @include desk{
+      &:hover::after{
+        display: block;
+      }
+    }
+    
+  }
+  &__dots{
+    width: 100%; height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  &__dot{
+    width: 10px; height: 10px;
+    background-color: $BGColor-labelLight;
+    border-radius: 50%;
+
+    &.active{
+      background-color: $commonColor-primary;
+    }
+  }
+}
+
+// -------------------- D-topics
+.D-topics{
+  width: 100%; 
+  display: flex; flex-direction: column;
+  @include largepad{
+    width: 100%;
+  }
+  @include desk{
+    width: 60%;
+  }
+
+  &__title{
+    width: 100%; height: 50px;
+    background-color: $BGColor-labelDark;
+    color: #fff;
+    font-size: $font-l;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 50px;
+  }
+  &__items{
+    width: 100%; height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap; justify-content: center; align-items: center;
+    gap: 10px;
+    @include largepad{
+      justify-content: space-between;
+    }
+    @include desk{
+      justify-content: center;
+    }
+
+  }
+  &__item{
+    width: calc(50% - 5px);
+    background-color: #ccc;
+    overflow: hidden;
+    @include largepad{
+      width: calc(33% - 5px);
+    }
+    @include desk{
+      width: calc(50% - 5px);
+    }
+    @include aspect-ratio (3,5);
+  }
+}
+
+
+// -------------------- G-banners
+.G-banners{
+  @include space-between-components;
+  width: 100%;
+  background-color: $BGColor-grayLight;
+  padding: 30px 1rem 1rem 1rem;
+  @include largepad{
+    padding: 30px 50px 50px 50px;
+  }
+  &__wrap{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    &:has(.G-banners__abanner){
+      
+      gap: 1rem;
+      @include pad{
+        display: flex; justify-content: center; align-items: center;
+      }
+      .G-banners__title{
+        flex-grow: 1;
+      }
+      .G-banners__abanner{
+        width: 70%;
+        max-width: 700px;
+      }
+    }
+  }
+  .owl-nav{display: none;}
+  .owl-dots{margin-top: 10px;}
+  .owl-stage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    text-align: center;
+    font-size: $font-l;
+    color: $fontColor-dark;
+    margin-bottom: 20px;
+    a{
+      color: $commonColor-highlight;
+      font-weight: 600;
+      font-size: $font-l;
+      line-height: $font-l;
+      margin: 0 5px;
+      border-bottom: $commonColor-highlight solid 1px;
+    }
+  }
+  &__items{
+    @include max-width;
+    margin: auto;
+    .item {
+      display: flex; justify-content: center; align-items: center;
+      a{
+        img{
+          width: 100%; height: 100%;
+        }
+        .--fordesk{display: none;}
+        @include largepad{
+          .--fordesk{display: block;}
+          .--formobile{display: none;}
+        }
+      }
+    }
+  }
+  &__banners5, &__banners4, &__banners3,&__banners2 {
+    a{
+      max-width: 318px; max-height: 219px;
+    }
+  }
+  &__banners2{
+    .item{
+      @include largepad{
+        a{
+          max-width: 500px; max-height: 250px;
+        }
+      }
+    }
+  }
+  &__abanner{
+
+  }
+}
+
+// -------------------- K-limitedtimeOffer & T-setPrice
+.K-limitedtimeOffer, .T-setPrice{
+  width: 100%; height: auto;
+  @include max-width;
+  margin: auto;
+  .owl-nav{display: none;}
+  .owl-dots{padding: 1rem 0;}
+  @include space-between-components;
+  &__title{
+    @include component-title;
+    letter-spacing: 0;
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    @include pad{
+      flex-direction: row;
+    }
+  }
+  &__timer{
+      margin-left: 10px;
+      display: flex; justify-content: center; align-items: center;
+      gap: 5px;
+      font-size: $font-xl;
+      div{
+        span{
+          display: inline-block;
+          font-size: $font-xl * 1.5;
+          font-family: $fontFamily-Teko;
+          font-weight: 300;
+          width: 25px; height: 100%;
+          line-height: $font-xl;
+          color: #fff;
+          border-radius: 5px;
+          overflow: hidden;
+          margin-left: 5px;
+          text-align: center;
+          vertical-align: middle;
+          position: relative;
+          padding: 10px 0 5px 0;
+          &::before{
+            content: '';
+            width: 100%; height: 100%;
+            background-color: darken($commonColor-highlight,10%);
+            display: block;
+            position: absolute; top: 0;
+            z-index: -1;
+          }
+          &::after{
+            content: '';
+            width: 100%; height: 50%;
+            background-color: $commonColor-highlight;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+          }
+        
+        }
+      }
+  }
+  &__items{
+    width: 100%;
+    padding: 0 5%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    &::before{
+      content: '';
+      width: 100%; height: 1px;
+      border-bottom: $commonColor-highlight solid 1px;
+      position: absolute;
+      top: 200px;
+      left: 0;
+    }
+  }
+  &__item{
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; justify-content: center; align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    .favoriteBTN{
+      top: calc(200px - 135px);
+    }
+  }
+  &__name{
+    width: 100%; height: 53px;
+    color: $fontColor-dark;
+    @include line-clamp (2);
+    a{
+      font-size: $font-l;
+      line-height: 20px;
+      &:hover{
+        color: $fontColor-dark;
+      }
+    }
+    
+  }
+  &__price{
+    // width: 100%;
+    // text-align: right;
+    color: $fontColor-disable;
+    &--original{
+      position: relative;
+      @include price-original;
+    }
+    &--sale{
+      @include price-sale;
+    }
+    &--discount{
+      @include price-discount;
+    }
+  }
+  &__pic{
+    width: 100%; height: 200px;
+    margin: auto;
+    order: -1;
+    &__wrap{
+      @include itemCard-picwrap;
+    }
+    a{
+      width: 100%; height: 100%;
+      display: flex; justify-content: center; align-items: center;
+      position: relative;
+      &::before{
+        content: '';
+        width: 100%; height: 70%;
+        display: block;
+        background-color: $BGColor-primary;
+        position: absolute; bottom: 0;
+        z-index: -1;
+      }
+      .K-limitedtimeOffer__pic__img, .T-setPrice__pic__img {
+        @include itemCard-picimg;
+      }
+    }
+    
+  }
+}
+// -------------------- T-setPrice
+.T-setPrice{
+  &__title{
+    @include component-title;
+  }
+  &__item{
+    gap: 0;
+  }
+  &__name{
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 10px;
+    span{
+      display: block;
+      font-weight: 400;
+      line-height: 25px;
+    }
+    &--en{
+      color: $fontColor-dark;
+    }
+    &--cn{
+      color: $fontColor-primary;
+    }
+  }
+  &__info{
+    width: 100%;
+    @include itemCard-info;
+    &__awards{
+      @include awards;
+    }
+  }
+  &__pic{
+    position: relative;
+    a{
+      justify-content: space-between; align-items: flex-end;
+      &::before{
+        background-color: #EEC584;
+      }
+      span{
+        color: #fff;
+        font-family: $fontFamily-Teko;
+      }
+    }
+    &__x{
+      font-size: 6rem;
+      position: relative;
+      bottom: -35px; left: -1rem;
+    }
+    &__quantity{
+      font-size: 8rem;
+      position: relative;
+      bottom: -50px; left: -1rem;
+    }
+  }
+}
+
+// -------------------- L-itemsRanking & M-itemList
+.L-itemsRanking, .M-itemList{
+  width: 100%;
+  @include max-width;
+  margin: auto;
+  @include space-between-components;
+  .owl-nav{display: none;}
+  .owl-dots{padding: 1rem 0;}
+  .owl-stage-outer{
+    padding-top: 5px;
+  }
+  &__title{
+    @include component-title;
+    display: flex; justify-content: center; align-items: center;
+  }
+  &__items{
+    width: 100%;
+    padding: 0 2%;
+  }
+  &__item{
+    display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;
+  }
+  &__name{
+    width: 100%;
+    background-color: $BGColor-primary;
+    margin-bottom: 0;
+    padding: 0 10px;
+    span{
+      display: block;
+      line-height: 25px;
+      font-weight: 400;
+    }
+    &--en{
+      color: $fontColor-dark;
+    }
+    &--cn{
+      color: $fontColor-primary;
+    }
+  }
+  &__info{
+    width: 100%;
+    background-color: $BGColor-primary;
+    line-height: 25px;
+    padding: 0 10px 10px 10px;
+    @include itemCard-info;
+    &__awards{
+      @include awards;
+    }
+  } 
+  &__price{
+    color: $fontColor-disable;
+    &--original{
+      position: relative;
+      @include price-original;
+    }
+    &--sale{
+      @include price-sale;
+    }
+    &--discount{
+      @include price-discount;
+    }
+  }
+  &__pic{
+    width: 100%; height: 200px;
+    order: -1;
+    background-color: $BGColor-primary;
+    position: relative;
+    a{
+      .L-itemsRanking__pic__img, .M-itemList__pic__img{@include itemCard-picimg;}
+    }
+    &__wrap{
+      @include itemCard-picwrap;
+      margin: auto;
+    }
+  }
+  &__Ranking{
+    width: 35px; height: 63px;
+    background-image: url(../images/element_label.svg);
+    position: absolute; top: -5px; left: 5px;
+    text-align: center;
+    span{
+      font-size: $font-xl;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+
+}
+// -------------------- M-itemList
+.M-itemList{
+  .owl-stage-outer{
+    padding: 0;
+  }
+  .owl-item:nth-child(even) .M-itemList__pic{
+    background-color: transparent;
+  }
+  &__items{
+    width: 100%;
+    position: relative;
+    padding: 0 2%;
+    margin: auto;
+    &::after{
+      content: '';
+      width: 100%; height: 1px;
+      border-bottom: $commonColor-highlight solid 1px;
+      position: absolute;
+      top: 200px;
+      left: 0;
+    }
+    &::before{
+      content: '';
+      width: 100%; height: 1px;
+      border-bottom: $commonColor-highlight solid 1px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+   
+  }
+  
+  &__name{
+    background-color: transparent;
+    margin-top: 10px;
+  }
+  &__info{
+    background-color: transparent;
+  }
+}
+// -------------------- N-freeGift
+.N-freeGift{
+  width: 100%;
+  @include max-width;
+  margin: auto;
+  @include space-between-components;
+  .owl-nav{display: none;}
+  .owl-dots{padding: 1rem 0;}
+  &__title{
+    @include component-title;
+  }
+  &__items{
+    width: 100%;
+    padding: 0 2%;
+  }
+  &__item{
+    display: flex; flex-direction: column;
+  }
+  &__name{
+    width: 100%;
+    color: $fontColor-dark;
+    text-align: center;
+  }
+  &__price{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+    color: $fontColor-light;
+    border-top: $commonColor-highlight solid 1px;
+    span{
+      &::before{
+        content: '$';
+
+      }
+    }
+  }
+  &__pic{
+    width: 100%; height: 200px;
+    order: -1;
+    position: relative;
+    a{
+      .N-freeGift__pic__img{@include itemCard-picimg;}
+    }
+    &__wrap{
+      width: 200px; height: 200px;
+      margin: auto;
+    }
+  }
+}
+
+// -------------------- R-keywords
+.R-keywords{
+  width: 100%;
+  @include max-width;
+  margin: auto;
+  margin-top: 50px;
+  padding: 0 1rem;
+  @include pad{
+    display: flex; justify-content: center; align-items: center;
+  }
+  
+  &__title{
+    @include component-title;
+    width: auto;
+    
+    @include nowrap;
+    @include pad{
+      right: 0px;
+      padding: 0;
+      border-bottom: $commonColor-highlight solid 1px;
+      padding-right: 40px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      position: relative;
+      right: -20px;
+    }
+  }
+  &__items{
+    width: 100%; height: auto;
+    display: flex; flex-wrap: wrap; 
+    gap: 1rem;
+    padding: 1rem;
+    
+    background-color: $BGColor-labelLight;
+    @include pad{
+      width: 70%;
+      padding-left: 50px;
+    }
+  }
+  &__item{
+    color: $fontColor-dark;
+    a{
+      &:hover{
+        color: $commonColor-primary;
+        font-weight: 500;
+      }
+    }
+    
+  }
+}
+// -------------------- O-articles-activity
+.O-articles-activity{
+  width: 100%;
+  @include max-width;
+  margin: auto;
+  @include space-between-components;
+  display: flex; flex-direction: column;
+  gap: 2%;
+  padding-right: 2%;
+  @include largepad{
+    flex-direction: row;
+  }
+  .owl-nav{display: none;}
+  .owl-dots{padding: 1rem 0;}
+  &__title{
+    width: 100%;
+    display: inline-block;
+    font-size: $font-xl;
+    color: $commonColor-highlight;
+    padding-left: 2rem; padding-right: 1rem;
+    position: relative;
+    letter-spacing: 0.5rem;
+    &::after{
+      content: '';
+      width: 200px; height: 1px;
+      border-bottom: $commonColor-highlight solid 1px;
+      display: inline-block;
+      position: absolute; bottom: 0; left: 0;
+    }
+    span{
+      font-size: 3rem;
+    }
+    @include largepad{
+      width: 20%;
+      flex-grow: 1;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      font-size: 3rem;
+      position: relative;
+      letter-spacing: 1.5rem;
+      &::after{
+        display: none;
+      }
+      &::before{
+        content: '';
+        display: block;
+        width: 80%; height: 70%;
+        background-color: $commonColor-highlight;
+        opacity: 0.2;
+        position: absolute; left: 0;
+        top: 50%; transform: translateY(-50%);
+        border-radius: 0 10px 10px 0;
+      }
+      span{
+        font-size: 5rem;
+      }
+    }
+    
+    
+    
+  }
+  &__items{
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 1rem;
+    flex-grow: 3;
+    @include largepad{
+      width: 78%;
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+  &__item{
+    display: flex; flex-direction: column; align-items: center;
+    background-color: lighten($commonColor-highlight,40%);
+    margin-top: 170px;
+    padding-top: 40px; padding-right: 15px; padding-left: 15px;
+    border-radius: 10px;
+  }
+  .owl-item:nth-child(2) .O-articles-activity{
+    &__item{
+      background-color: transparent;
+    }
+    &__pic{
+      &::before{
+        content: '';
+        width: 200px; height: 200px;
+        display: block;
+        border-radius: 50%;
+        background-color: lighten($commonColor-highlight,40%);
+        position: absolute; top: 0;
+        z-index: -1;
+      }
+    }
+
+  }
+  &__caption{
+    width: 100%;
+    font-size: $font-l;
+    color: $fontColor-secondary;
+    margin-bottom: 0;
+    &::after{
+      content: '';
+      width: 30px; height: 1px;
+      border-bottom: $commonColor-highlight solid 2px;
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  &__intro{
+    width: 100%;
+    text-align: right;
+    &--content{
+      line-height: 25px;
+      color: $fontColor-light;
+      text-align: left;
+      @include line-clamp (5);
+    }
+    &--more{
+      width: 50px; height: 20px;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.5);
+      background-color: $commonColor-highlight;
+      // padding: 0 10px;
+      line-height: 17px;
+      border-radius: 20px;
+      vertical-align: middle;
+      text-align: center;
+      transition: 0.4s;
+      &:hover{
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  &__pic{
+    width: 200px; height: 200px;
+    order: -1;
+    position: absolute; top: 0;
+    .O-articles-activity__img{
+      @include itemCard-picimg;
+    }
+  }
+}
+// -------------------- Q-articles-items
+.Q-articles-items{
+  width: 100%;
+  @include max-width;
+  margin: auto;
+  position: relative;
+  @include space-between-components;
+  &__title{
+    color: $fontColor-primary;
+    font-size: $font-xl;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    letter-spacing: 0.5rem;
+    line-height: $font-xl;
+    position: absolute; top: 0; left: 0;
+    &::before{
+      content: '';
+      width: 20px; height: 100%;
+      display: inline-block;
+      border: solid 1px;
+      border-color: $commonColor-highlight $commonColor-highlight transparent transparent;
+      position: relative; left: -5px;
+    }
+  }
+  &__articles{
+    width: 100%;
+    .owl-dots{display: none;}
+    .owl-nav{
+      width: 80%;
+      margin: auto;
+      position: relative; bottom: -25px;
+      display: flex; justify-content: center; align-items: center;
+      span{
+        font-size: 0;
+        font-family: $fontFamily-chevron;
+        font-weight: 800;
+        color: $commonColor-highlight;
+      }
+      .owl-prev::after{
+        content: '看上一篇';
+        border-bottom: $fontColor-dark solid 1px;
+      }
+      .owl-next::after{
+        content: '看下一篇';
+        border-bottom: $fontColor-dark solid 1px;
+      }
+      .disabled{
+        opacity: 0.5;
+        color: $fontColor-disable;
+      }
+      [class*=owl-]:hover {
+        background-color: transparent;
+        color: $fontColor-disable;
+      }
+    }
+  }
+  &__caption{
+    width: 100%; min-height: 60px;
+    padding-left: 70px;
+    span{
+      display: block;
+    }
+    &--main{
+      font-size: $font-l * 1.2;
+      color: $fontColor-secondary;
+    }
+    &--minor{
+      font-size: $font-l;
+      color: $fontColor-disable;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+  &__topic{
+    width: 100%;
+    padding-left: 70px;
+    color: $fontColor-disable;
+    letter-spacing: 0.3rem;
+    span{
+      font-size: $font-l;
+      &:first-child{
+        font-size: 3rem;
+        letter-spacing: 0;
+      }
+    }
+  }
+  &__intro{
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 20px;
+    position: relative;
+    // padding-bottom: 40px;
+    @include largepad{
+      width: 70%;
+    }
+    &--paragraph{
+      display: block;
+      font-size: $font-l;
+      color: $fontColor-dark;
+      line-height: 2rem;
+      text-indent: 2em;
+      word-wrap: break-word;
+      &.--more{
+        display: none;
+        @include largepad{
+          display: block;
+        }
+      }
+    }
+    &--flip{
+      display: block;
+      @include largepad{
+        display: none;
+      }
+      .readmore{
+        width: 100%; height: 150px;
+        display: block;
+        background: linear-gradient(to top, #ffffff, #ffffffd0, #ffffff00);
+        position: absolute; bottom: 0; left: 0;
+        display: flex; justify-content: center; align-items: flex-end;
+        cursor: pointer;
+        &::after{
+          content: '';
+          width: 40px; height: 40px;
+          display: block;
+          background-image: url(../images/icon_chevron_gray.svg);
+          background-size: 200% auto;
+          background-position: left bottom;
+        }
+      }
+      .readless{
+        width: 40px; height: 40px;
+        display: block;
+        background-image: url(../images/icon_chevron_gray.svg);
+        background-size: 200% auto;
+        background-position: left top;
+        margin: auto;
+        cursor: pointer;
+    }
+    }
+  }
+  &__pic{
+    width: 100%; height: 100%;
+    overflow: hidden;
+    @include largepad{
+      position: absolute; right: 5%; top: 60px;
+      width: 25%; height: calc(100% - 350px);
+      background-color: #E9E5E1;
+      overflow: visible;
+    }
+    @media (min-width: 1000px) {
+      height: 100%; 
+    }
+    &__wrap{
+      width: 100%; height: 200px;
+      @include largepad{
+        width: 90%; padding-top: 90%; 
+      }
+      &:first-child{
+        display: none;
+        @include largepad{
+          position: relative; top: -20px; left: -20px;
+          display: block;
+        }
+      }
+      &:last-child{
+        @include largepad{
+          position: relative; top: 0px; right: -40px;
+          display: block;
+        }
+      }
+    }
+    .Q-articles-items__pic__img{
+      width: 100%; height: 100%; object-fit: cover;
+      @include largepad{
+        position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+      }
+      
+    }
+  }
+  // ---------------------- 酒款列表
+  &__items{
+    width: 100%;
+    @include pad{
+      
+      // padding: 0 5%;
+    }
+    @include largepad{
+      // width: calc(70% - 10%);
+      width: calc(100% - 10%);
+      margin: 50px 5% 0 5%;
+      border: $commonColor-highlight solid 1px;
+    }
+    @media (min-width: 1000px) {
+      width: calc(70% - 10%);
+    }
+    
+    .owl-dots{display: none;}
+    .owl-nav{
+      width: 100%;
+      display: flex; justify-content: space-between; align-items: center;
+      position: absolute; top: 50%; transform: translateY(-50%);
+      span{
+        font-size: 40px;
+        font-family: $fontFamily-chevron;
+        font-weight: 800;
+        color: $commonColor-highlight;
+      }
+      .disabled{
+        span{color: $fontColor-disable;}
+      }
+      [class*=owl-]:hover {
+        background-color: transparent;
+      }
+      .owl-prev::after{
+        display: none;
+      }
+      .owl-next::after{
+        display: none;
+      }
+    }
+  }
+  &__item{
+    position: relative;
+    width: 80%; height: 200px;
+    margin: auto;
+    @include pad{
+      width: 90%;
+    }
+    @include largepad{
+      width: 90%;
+    }
+    
+    &__info{
+      height: 100%;
+      background-color: #E9E5E1;
+      flex-grow: 1;
+      margin-left: 50px;
+    }
+    &__name{
+      padding-top: 40px;
+      padding: 40px 20px 0 50px;
+      span{
+        display: block;
+        line-height: 25px;
+      }
+      &--en{
+        color: $fontColor-dark;
+      }
+      &--cn{
+        color: $fontColor-primary;
+      }
+    }
+    &__price{
+      width: 100%;
+      padding-left: 50px; padding-right: 20px;
+      
+      color: $fontColor-light;
+      span{
+        font-size: $font-xl;
+        color: $deliveryColor-normal;
+        font-weight: 600;
+        margin-left: 5px;
+        &::before{
+          content: '$';
+          font-size: $font-m;
+        }
+      }
+      a{
+        display: inline-block;
+        background-color: $commonColor-highlight;
+        color: #fff;
+        padding: 0 5px;
+        border-radius: 10px;
+        margin-left: 20px;
+      }
+    }
+    &__picwrap{
+      position: absolute;
+      top: 0; left: 0;
+      width: 100px; height: 100%;
+      .Q-articles-items__item__img{
+        width: 100%; height: 100%; object-fit: contain;
+      }
+    }
+    
+  }
+
+}
+
+// -------------------- S_brands
+.S_brands{
+  width: 100%;
+  @include max-width;
+  margin: auto;
+  @include space-between-components;
+  .owl-nav{display: none;}
+  .owl-dots{padding: 1rem 0;}
+  &__title{
+    @include component-title;
+  }
+  &__items{
+    width: 100%;
+    padding: 0 2%;
+    position: relative;
+    &::after{
+      content: '';
+      width: 100%; height: 1px;
+      border-bottom: $commonColor-highlight solid 1px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__item{
+    background-color: $BGColor-primary;
+    display: flex; flex-direction: column;
+  }
+  
+  &__name{
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    
+    span{
+      display: block;
+      line-height: 25px;
+      // font-size: $font-l;
+      
+    }
+    
+    &--en{
+      color: $fontColor-dark;
+    }
+    &--cn{
+      color: $commonColor-primary;
+    }
+  }
+  &__intro{
+    width: 100%;
+    padding: 0 20px;
+    
+    &--content{
+      width: 100%;
+      font-size: $font-m * 0.9;
+      line-height: 25px;
+      color: $fontColor-dark;
+      display: block;
+      word-wrap: break-word;
+      @include line-clamp (4);
+    }
+    &--more{
+      width: 100%;
+      display: block;
+      text-align: end;
+      color: $fontColor-light;
+    }
+      
+  }
+  &__bgpic{
+    width: 100%; height: 200px;
+    order: -1;
+    .S_brands__img{
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+  &__pic{
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 50%; transform: translateX(-50%);
+    text-align: center;
+    display: flex; justify-content: center; align-items: center;
+    .S_brands__img{
+      @include itemCard-picimg;
+      object-position: center center;
+    }
+  }
+  
+}
+
+// -------------------- U-classification
+
+.U-classification{
+  display: none;
+  width: 100%;
+  flex-grow: 1;
+  @include largepad{
+    display: flex;
+    gap: 20px;
+  }
+  
+  &__sortList{
+    width: 150px; height: 100%;
+    background-color: $BGColor-labelLight;
+    flex-shrink: 0;
+    display: flex; flex-direction: column; gap: 0;
+    justify-content: space-between;
+  }
+  &__sort{
+    width: 100%; height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: $fontColor-dark;
+    font-size: $font-l;
+    position: relative;
+    &:not(:first-child){
+      border-bottom: darken($BGColor-labelLight,10%) solid 1px;
+    }
+    &:hover:not(:first-child){
+      background-color: darken($BGColor-labelLight,5%);
+      cursor: pointer;
+    }
+    // 倒數兩個
+    &:nth-last-child(-n+2){
+      background-color: darken($BGColor-labelLight,10%);
+    }
+    &.active{
+      background-color: $commonColor-primary;
+      // border-bottom: $BGColor-labelLight solid 1px;
+      color: #fff;
+      &:hover{
+        background-color: $commonColor-primary;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        top: 50%; right: -20px;
+        transform: translateY(-50%);
+        width: 0; height: 0;
+        border-style: solid;
+        border-width: 8px 15px;
+        border-color: transparent $commonColor-primary transparent transparent;
+      }
+    }
+    
+  }
+  
+  &__title{
+    background-color: $BGColor-labelDark;
+    color: #fff;
+    height: 50px;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+  }
+  &__itemList{
+    flex-grow: 1;
+    tbody{
+      border: solid $commonColor-primary 1px;
+      tr{
+        border-bottom: solid $commonColor-primary 1px;
+      }
+    }
+  }
+
+  &__itemRow{
+    margin: 0 10px;
+    
+  }
+  &__itemTitle{
+    width: 15%; min-width: 55px;
+    text-align: center;
+    background-color: $commonColor-primary;
+    color: #fff;
+    font-size: $font-m * 1.1;
+    text-align: right;
+    padding: 0 10px;
+    span{
+      font-size: $font-m * 1.1;
+      //@include nowrap;
+    }
+  }
+  &__items{
+    width: 100%; 
+    padding: 0 10px;
+    display: flex;
+  }
+  &__wrap{
+    // flex-grow: 1;
+    // max-width: 90%; 
+    width: auto;
+    height: 50px;
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    display: inline-block;
+  }
+  &__item{
+    padding: 0 5px;
+    line-height: 50px;
+    @include nowrap;
+    &:hover{
+      color: $commonColor-primary;
+    }
+  }
+  &__moreitems{
+    width: 35px; height: 15px;
+    min-width: 35px;
+    display: flex; justify-content: center; align-items: center;
+    gap: 2px;
+    margin: auto;
+    background-color: darken($BGColor-labelLight,10%);
+    border-radius: 20px;
+    text-align: center;
+    
+    span{
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  }
+
+  // 各館分類樣式
+  &--wine, &--spirits, &--beer, &--sake{
+    .U-classification__breadcrumb{
+      width: 100%;
+      height: 50px; line-height: 50px;
+      flex-wrap: wrap;
+      span{
+        font-size: $font-m;
+        color: $fontColor-secondary;
+        a{
+          font-size: $font-m;
+          color: $fontColor-secondary;
+        }
+        &:not(:last-child)::after{
+          content: '>';
+          padding: 0 5px;
+          font-size: $font-s;
+          font-family: $fontFamily-chevron;
+          vertical-align: middle;
+        }
+      }
+      
+    }
+    .U-classification__sortBTN:not(:last-child){
+      height: auto; 
+      // line-height: 40px;
+      border: none;
+      span{
+        width:calc(100% - 10px); height: 45px; line-height: 45px;
+        display: block;
+        border-bottom: darken($BGColor-labelLight,10%) solid 1px;
+        margin: 0 5px;
+      }
+      &.active span:last-child{
+        border-bottom: none;
+      }
+    }
+    .U-classification__itemList{
+      width: 100%; 
+      flex-grow: 1;
+      display: flex; flex-direction: column;
+      
+    }
+    .U-classification__itemWrap{
+      width: 100%;
+      display: flex; justify-content: center; align-items: center;
+      flex-grow: 1;
+      border: solid $commonColor-primary 1px; 
+      border-left: solid $commonColor-primary 4px; 
+      position: relative;
+    }
+    .U-classification__items{
+      width: calc(100% - 5%); height: 360px;
+      display: flex; flex-direction: column; 
+      align-items: flex-start;
+      flex-wrap: wrap;
+      column-gap: 5%;
+      position: relative;
+      overflow: hidden;
+      li{
+        width: 50%; //height: 30px;
+        padding: 0.1rem 0.5rem;
+        a{
+          line-height: 15px;
+          white-space: normal;
+          padding: 0;
+        }
+      }
+      &--col3{
+        column-gap: 0;
+        padding: 0;
+        li{
+          width: 33.3%;
+        }
+      }
+      &--col4{
+        column-gap: 0;
+        padding: 0;
+        li{
+          width: 25%;
+        }
+      }
+    }
+    .U-classification__itemTitle{
+      text-align: left;
+      background-color: transparent;
+      color: $fontColor-secondary;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+      position: relative;
+      // padding-left: 0;
+      &::after{
+        content: '';
+        width: 150px; height: 1px;
+        display: block;
+        border-bottom: solid $commonColor-primary 1px; 
+        position: absolute; bottom: 0; left: 0;
+      }
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  
+  }
+  &--sake{
+    .U-classification__sortBTN:not(:last-child){
+      span{
+        height: 40px; line-height: 40px;
+      }
+    }
+    .U-classification__items{
+      height: 440px;
+    }
+  }
+}

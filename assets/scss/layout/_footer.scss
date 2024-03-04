@@ -1,0 +1,154 @@
+//由小到大
+//共用樣式
+.footer{
+  width: 100%; height: auto;
+  background: darken($BGColor-labelDark, 10%);
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: calc(100vh/10 + 80px);
+  padding-left: 5%;
+  @include desk{
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  &__items{
+    width: 100%; height: auto;
+    max-width: 1200px;
+    margin: auto;
+    @include largepad{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @include desk{
+      flex-wrap: nowrap;
+      gap: 5%;
+    }
+  }
+  &__item{
+    width: 100%; height: auto;
+    color: #fff;
+    position: relative;
+    @include desk{
+      width: 100px;
+    }
+    &__title{
+      font-size: $font-l;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      & .icon_chevron{
+        width: 24px; height: 24px;
+        background-image: url(../images/icon_chevron.svg);
+        background-size: 48px 48px;
+        background-position: left top;
+        display: inline-block;
+        @include desk{
+          display: none;
+        }
+      }
+    }
+    &__contents{
+      width: 100%; 
+    }
+    &__content{
+      width: 100%; height: auto;
+      line-height: 30px;
+      color: #fff;
+      
+
+      & span{
+        display: inline-block;
+        white-space:nowrap;
+        line-height: 20px;
+        vertical-align: top;
+      }
+      &--socialmedia{
+        width: 24px; height: 100%;
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+        
+        img { 
+          width: 100%; 
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+    
+    //針對前三個item
+    &:not(:last-child){
+      & .footer__item__title{
+        border-bottom: solid $BGColor-labelDark 1px;
+        &--close .icon_chevron{
+          background-position: left bottom;
+        }
+        @include desk{
+          border: none;
+        }
+      }
+      & .footer__item__contents{
+        max-height: 100%;
+        overflow: hidden;
+
+        &.--close{
+          max-height: 0;
+          @include desk{
+            max-height: 100%;
+          }
+        }
+      }
+      & .footer__item__content{
+        width: calc(100% - 10px);
+        border-bottom: solid $BGColor-labelDark 1px;
+        margin-left: 10px;
+        line-height: 50px;
+        
+        @include desk{
+          border: none;
+          line-height: 35px;
+          margin-left: 0;
+          white-space:nowrap;
+        }
+      }
+      @include largepad{
+        width: 30%;
+      }
+      @include desk{
+        flex-grow: 1;
+        &::after{
+          content: '';
+          width: 1px; height: 100px;
+          border-left: solid $BGColor-labelDark 1px;
+          position: absolute;
+          top: 50px;right: -10px;
+        }
+      }
+    }
+    //針對最後一個item
+    &:last-child{
+      margin-top: 30px;
+      @include largepad{
+        width: 100%;
+      }
+      @include desk{
+        flex-grow: 3;
+        margin-top: 0;
+        & .footer__item__content{
+          line-height: 35px;
+        }
+      }
+    }
+  }
+  &__copyright {
+    border: solid $BGColor-labelDark 1px;
+    padding: 10px;
+    margin-top: 20px;
+    span {
+      display: block;
+    }
+  }
+}

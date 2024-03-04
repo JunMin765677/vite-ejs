@@ -1,0 +1,1220 @@
+<% console.log(page) %>
+<!-- 分類找酒-綜合首頁 -->
+<% if (page == 'index'){%>
+<section class="U-classification U-classification--index">
+    <ul class="U-classification__sortList">
+        <li class="U-classification__sort U-classification__title">分類找酒</li>
+        <li class="U-classification__sort U-classification__sortBTN active" data-target="sortWine">葡萄酒</li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSpirits">烈酒</li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortBeer">啤酒</li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSake">清酒</li>
+        <li class="U-classification__sort">進階搜尋</li>
+        <li class="U-classification__sort">近期瀏覽</li>
+    </ul>
+    <table class="U-classification__itemList U-classification__itemList--wine" id="sortWine">
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>熱門</span><span>搜尋</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">頂級名酒</a>
+                    <a  class="U-classification__item" href="#">快速到貨</a>
+                    <a  class="U-classification__item" href="#">超值預定</a>
+                    <a  class="U-classification__item" href="#">自然酒</a>
+                    <a  class="U-classification__item" href="#">橘酒</a>
+                    <a  class="U-classification__item" href="#">陶甕酒</a>
+                    <a  class="U-classification__item" href="#">無酒精</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">類型</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">紅酒</a>
+                    <a  class="U-classification__item" href="#">白酒</a>
+                    <a  class="U-classification__item" href="#">粉紅酒</a>
+                    <a  class="U-classification__item" href="#">氣泡酒</a>
+                    <a  class="U-classification__item" href="#">甜酒</a>
+                    <a  class="U-classification__item" href="#">加烈酒</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">產區</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">法國</a>
+                    <a  class="U-classification__item" href="#">義大利</a>
+                    <a  class="U-classification__item" href="#">日本</a>
+                    <a  class="U-classification__item" href="#">紐西蘭</a>
+                    <a  class="U-classification__item" href="#">美國</a>
+                    <a  class="U-classification__item" href="#">澳洲</a>
+                    <a  class="U-classification__item" href="#">智利</a>
+                    <a  class="U-classification__item" href="#">德國</a>
+                    <a  class="U-classification__item" href="#">紐西蘭</a>
+                    <a  class="U-classification__item" href="#">阿根廷</a>
+                    <a  class="U-classification__item" href="#">奧地利</a>
+                    <a  class="U-classification__item" href="#">葡萄牙</a>
+                    <a  class="U-classification__item" href="#">日本</a>
+                    <a  class="U-classification__item" href="#">南非</a>
+                    <a  class="U-classification__item" href="#">台灣</a>
+                    <a  class="U-classification__item" href="#">希臘</a>
+                    <a  class="U-classification__item" href="#">匈牙利</a>
+                    <a  class="U-classification__item" href="#">黎巴嫩</a>
+                    <a  class="U-classification__item" href="#">喬治亞</a>
+                    <a  class="U-classification__item" href="#">英國</a>
+                    <a  class="U-classification__item" href="#">以色列</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">品種</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">波爾多調配品種</a>
+                    <a  class="U-classification__item" href="#">黑皮諾</a>
+                    <a  class="U-classification__item" href="#">梅洛</a>
+                    <a  class="U-classification__item" href="#">卡本內蘇維濃</a>
+                    <a  class="U-classification__item" href="#">夏多內</a>
+                    <a  class="U-classification__item" href="#">卡本內弗朗</a>
+                    <a  class="U-classification__item" href="#">麗絲玲</a>
+                    <a  class="U-classification__item" href="#">希哈</a>
+                    <a  class="U-classification__item" href="#">榭密翁</a>
+                    <a  class="U-classification__item" href="#">白蘇維濃</a>
+                    <a  class="U-classification__item" href="#">格那希</a>
+                    <a  class="U-classification__item" href="#">山吉歐維榭</a>
+                    <a  class="U-classification__item" href="#">田帕尼優</a>
+                    <a  class="U-classification__item" href="#">希哈(Shiraz)</a>
+                    <a  class="U-classification__item" href="#">馬爾貝克</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">單價</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">$500以內</a>
+                    <a  class="U-classification__item" href="#">$1000-2000</a>
+                    <a  class="U-classification__item" href="#">$2001-3000</a>
+                    <a  class="U-classification__item" href="#">$3001-4000</a>
+                    <a  class="U-classification__item" href="#">$4001-5000</a>
+                    <a  class="U-classification__item" href="#">$5000以上</a>
+                </div>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">評價</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">Robert Parker</a>
+                    <a  class="U-classification__item" href="#">Jancis Robinson</a>
+                    <a  class="U-classification__item" href="#">Wine Spectator</a>
+                    <a  class="U-classification__item" href="#">Wine Enthusiast</a>
+                    <a  class="U-classification__item" href="#">James Suckling</a>
+                </div> 
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">等級</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">法定產區管制 AC</a>
+                    <a  class="U-classification__item" href="#">保證法定產區 DOCG</a>
+                    <a  class="U-classification__item" href="#">美國葡萄酒法定產區 AVA</a>
+                    <a  class="U-classification__item" href="#">紐澳產區分級 GI</a>
+                    <a  class="U-classification__item" href="#">法定產區 DOC</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+    </table>
+    <table class="U-classification__itemList U-classification__itemList--spirits" id="sortSpirits" style="display: none;">
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>熱門</span><span>搜尋</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">快速到貨</a>
+                    <a  class="U-classification__item" href="#">超值預定</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">類型</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">單一麥芽威士忌</a>
+                    <a  class="U-classification__item" href="#">調和麥芽威士忌</a>
+                    <a  class="U-classification__item" href="#">單一穀物威士忌</a>
+                    <a  class="U-classification__item" href="#">調和威士忌</a>
+                    <a  class="U-classification__item" href="#">獨立裝瓶廠威士忌</a>
+                    <a  class="U-classification__item" href="#">琴酒</a>
+                    <a  class="U-classification__item" href="#">蘭姆酒</a>
+                    <a  class="U-classification__item" href="#">伏特加</a>
+                    <a  class="U-classification__item" href="#">苦艾酒</a>
+                    <a  class="U-classification__item" href="#">龍舌蘭</a>
+                    <a  class="U-classification__item" href="#">利口酒</a>
+                    <a  class="U-classification__item" href="#">梅斯卡</a>
+                    <a  class="U-classification__item" href="#">調酒相關</a>
+                    <a  class="U-classification__item" href="#">烈酒</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">產區</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">蘇格蘭</a>
+                    <a  class="U-classification__item" href="#">日本</a>
+                    <a  class="U-classification__item" href="#">法國</a>
+                    <a  class="U-classification__item" href="#">台灣</a>
+                    <a  class="U-classification__item" href="#">義大利</a>
+                </div>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>特殊</span><span>風味</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">波本桶</a>
+                    <a  class="U-classification__item" href="#">雪莉桶</a>
+                    <a  class="U-classification__item" href="#">泥煤</a>
+                    <a  class="U-classification__item" href="#">歐露羅素雪莉桶</a>
+                    <a  class="U-classification__item" href="#">美國白橡木桶</a>
+                </div>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">單價</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">$500以內</a>
+                    <a  class="U-classification__item" href="#">$1000-2000</a>
+                    <a  class="U-classification__item" href="#">$2001-3000</a>
+                    <a  class="U-classification__item" href="#">$3001-4000</a>
+                    <a  class="U-classification__item" href="#">$4001-5000</a>
+                    <a  class="U-classification__item" href="#">$5000以上</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">酒齡</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">NV(無年份)</a>
+                    <a  class="U-classification__item" href="#">1981年份</a>
+                    <a  class="U-classification__item" href="#">1985年份</a>
+                    <a  class="U-classification__item" href="#">2021年份</a>
+                    <a  class="U-classification__item" href="#">2022年份</a>
+                    <a  class="U-classification__item" href="#">3年</a>
+                    <a  class="U-classification__item" href="#">4年</a>
+                    <a  class="U-classification__item" href="#">5年</a>
+                    <a  class="U-classification__item" href="#">6年</a>
+                    <a  class="U-classification__item" href="#">7年</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">評價</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">International Wine & Spirit Competition</a>
+                    <a  class="U-classification__item" href="#">San Francisco World Spirits Competition</a>
+                    <a  class="U-classification__item" href="#">International Spirits Challenge</a>
+                    <a  class="U-classification__item" href="#">World Whisky Award</a>
+                    <a  class="U-classification__item" href="#">Jim Murray</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+    </table>
+    <table class="U-classification__itemList U-classification__itemList--beer" id="sortBeer" style="display: none;">
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>熱門</span><span>搜尋</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">頂級名酒</a>
+                    <a  class="U-classification__item" href="#">各種愛爾</a>
+                    <a  class="U-classification__item" href="#">梨子＆蘋果酒</a>
+                    <a  class="U-classification__item" href="#">即飲調酒</a>
+                    <a  class="U-classification__item" href="#">小麥啤酒</a>
+                    <a  class="U-classification__item" href="#">修道院/比利時啤酒</a>
+                    <a  class="U-classification__item" href="#">拉格家族</a>
+                    <a  class="U-classification__item" href="#">蜂蜜酒</a>
+                    <a  class="U-classification__item" href="#">波特與司陶特</a>
+                    <a  class="U-classification__item" href="#">水果/季節啤酒</a>
+                    <a  class="U-classification__item" href="#">印度淺色愛爾</a>
+                    <a  class="U-classification__item" href="#">酸啤酒</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">類型</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">印度淺色愛爾</a>
+                    <a  class="U-classification__item" href="#">即飲調酒</a>
+                    <a  class="U-classification__item" href="#">蘋果酒</a>
+                    <a  class="U-classification__item" href="#">梨子酒</a>
+                    <a  class="U-classification__item" href="#">水果啤酒</a>
+                    <a  class="U-classification__item" href="#">比利時愛爾</a>
+                    <a  class="U-classification__item" href="#">比利時烈愛爾</a>
+                    <a  class="U-classification__item" href="#">德式小麥皮酒</a>
+                    <a  class="U-classification__item" href="#">桶陳啤酒</a>
+                    <a  class="U-classification__item" href="#">無酒精飲品</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">產區</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">台灣</a>
+                    <a  class="U-classification__item" href="#">英國</a>
+                    <a  class="U-classification__item" href="#">美國</a>
+                    <a  class="U-classification__item" href="#">日本</a>
+                    <a  class="U-classification__item" href="#">德國</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>特殊</span><span>原料</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">台灣茶葉</a>
+                    <a  class="U-classification__item" href="#">台灣茉莉花</a>
+                    <a  class="U-classification__item" href="#">可可豆</a>
+                    <a  class="U-classification__item" href="#">台灣冬瓜茶磚</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">單價</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">$100以內</a>
+                    <a  class="U-classification__item" href="#">$101-200</a>
+                    <a  class="U-classification__item" href="#">$201-300</a>
+                    <a  class="U-classification__item" href="#">$301-400</a>
+                    <a  class="U-classification__item" href="#">$401-500</a>
+                    <a  class="U-classification__item" href="#">$500以上</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">評價</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">RateBeer Overall</a>
+                    <a  class="U-classification__item" href="#">RateBeer Style</a>
+                    <a  class="U-classification__item" href="#">World Beer Award</a>
+                    <a  class="U-classification__item" href="#">International Beer Cup</a>
+                    <a  class="U-classification__item" href="#">Australian International Beer Award</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>酒精</span><span>濃度</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">低於4%</a>
+                    <a  class="U-classification__item" href="#">4-6%</a>
+                    <a  class="U-classification__item" href="#">6-8%</a>
+                    <a  class="U-classification__item" href="#">8-10%</a>
+                    <a  class="U-classification__item" href="#">10% 以上</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+    </table>
+    <table class="U-classification__itemList U-classification__itemList--sake" id="sortSake" style="display: none;">
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>熱門</span><span>搜尋</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">快速到貨</a>
+                    <a  class="U-classification__item" href="#">薰酒</a>
+                    <a  class="U-classification__item" href="#">爽酒</a>
+                    <a  class="U-classification__item" href="#">熟酒</a>
+                    <a  class="U-classification__item" href="#">醇酒</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">類型</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">純米大吟釀</a>
+                    <a  class="U-classification__item" href="#">大吟釀</a>
+                    <a  class="U-classification__item" href="#">純米吟釀</a>
+                    <a  class="U-classification__item" href="#">吟釀</a>
+                    <a  class="U-classification__item" href="#">純米酒</a>
+                    <a  class="U-classification__item" href="#">本釀造</a>
+                    <a  class="U-classification__item" href="#">普通酒</a>
+                    <a  class="U-classification__item" href="#">梅酒</a>
+                    <a  class="U-classification__item" href="#">燒酌</a>
+                    <a  class="U-classification__item" href="#">水果酒/其他</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">米種</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">山田錦</a>
+                    <a  class="U-classification__item" href="#">酒造好適米(不公開)</a>
+                    <a  class="U-classification__item" href="#">五百萬石</a>
+                    <a  class="U-classification__item" href="#">雄町</a>
+                    <a  class="U-classification__item" href="#">美山錦</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>特殊</span><span>製程</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">生酒</a>
+                    <a  class="U-classification__item" href="#">無濾過</a>
+                    <a  class="U-classification__item" href="#">原酒</a>
+                    <a  class="U-classification__item" href="#">氣泡清酒</a>
+                    <a  class="U-classification__item" href="#">山廢</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">單價</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">$500以內</a>
+                    <a  class="U-classification__item" href="#">$1000-2000</a>
+                    <a  class="U-classification__item" href="#">$2001-3000</a>
+                    <a  class="U-classification__item" href="#">$3001-4000</a>
+                    <a  class="U-classification__item" href="#">$4001-5000</a>
+                    <a  class="U-classification__item" href="#">$5000以上</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">產區</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">東北地方</a>
+                    <a  class="U-classification__item" href="#">九州</a>
+                    <a  class="U-classification__item" href="#">近畿地方</a>
+                    <a  class="U-classification__item" href="#">關東地方</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>日本</span><span>酒度</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">非常辛口</a>
+                    <a  class="U-classification__item" href="#">辛口</a>
+                    <a  class="U-classification__item" href="#">甘口</a>
+                    <a  class="U-classification__item" href="#">非常甘口</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>試飲</span><span>溫度</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">建議冰鎮</a>
+                    <a  class="U-classification__item" href="#">常溫OK</a>
+                    <a  class="U-classification__item" href="#">建議溫熱</a>
+                    <a  class="U-classification__item" href="#">冷熱皆宜</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle"><span>杜氏</span><span>集團</span></td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">南部</a>
+                    <a  class="U-classification__item" href="#">能登</a>
+                    <a  class="U-classification__item" href="#">廣島</a>
+                    <a  class="U-classification__item" href="#">會津</a>
+                    <a  class="U-classification__item" href="#">越後</a>
+                    <a  class="U-classification__item" href="#">大津</a>
+                    <a  class="U-classification__item" href="#">土佐</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">酵母</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">協會酵母</a>
+                    <a  class="U-classification__item" href="#">地區酵母</a>
+                    <a  class="U-classification__item" href="#">自家酵母</a>
+                    <a  class="U-classification__item" href="#">不公開</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">水</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">水質</a>
+                    <a  class="U-classification__item" href="#">軟水</a>
+                    <a  class="U-classification__item" href="#">硬水</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+        <tr class="U-classification__itemRow">
+            <td class="U-classification__itemTitle">評價</td>
+            <td class="U-classification__items">
+                <div class="U-classification__wrap">
+                    <a  class="U-classification__item" href="#">Sake Week 清酒銘柄快閃活動</a>
+                    <a  class="U-classification__item" href="#">The Fine SAKE Award</a>
+                    <a  class="U-classification__item" href="#">International Wine Challenge</a>
+                    <a  class="U-classification__item" href="#">Kura Master</a>
+                    <a  class="U-classification__item" href="#">SAKE Competition</a>
+                    <a  class="U-classification__item" href="#">Kan Sake Award</a>
+                </div>
+                <a class="U-classification__moreitems" href="#" style="display: none;"><span></span><span></span><span></span></a>
+            </td>
+        </tr>
+    </table>
+</section>
+<% } else{ %>
+    <% } %>
+
+<!-- 分類找酒-葡萄酒館 -->
+<% if (page == 'wine'){%>
+<section class="U-classification U-classification--wine">
+    <ul class="U-classification__sortList">
+        <li class="U-classification__sort U-classification__title">分類找酒</li>
+        <li class="U-classification__sort U-classification__sortBTN active" data-target="sortWinePopular"><span>熱門搜尋</span><span>類型</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortWineArea"><span>產區</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortWineClassification"><span>等級</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortWineComments"><span>評價</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortWinePrice"><span>單價</span><span>年份</span></li>
+        <li class="U-classification__sort">進階搜尋</li>
+        <li class="U-classification__sort">近期瀏覽</li>
+    </ul>
+    <div class="U-classification__itemList" id="sortWinePopular">
+        <div class="U-classification__breadcrumb"><span><a href="index.html">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li class="U-classification__itemTitle">熱門搜尋</li>
+                <li><a  class="U-classification__item" href="#">頂級名酒 (4443)</a></li>
+                <li><a  class="U-classification__item" href="#">快速到貨 (6374)</a></li>
+                <li><a  class="U-classification__item" href="#">超值預訂 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">自然酒 (1026)</a></li>
+                <li><a  class="U-classification__item" href="#">橘酒 (140)</a></li>
+                <li><a  class="U-classification__item" href="#">陶甕酒 (85)</a></li>
+                <li><a  class="U-classification__item" href="#">無酒精 (8)</a></li>
+                <li class="U-classification__itemTitle">類型</li>
+                <li><a  class="U-classification__item" href="#">紅酒(7817)</a></li>
+                <li><a  class="U-classification__item" href="#">白酒(2445)</a></li>
+                <li><a  class="U-classification__item" href="#">粉紅酒(128)</a></li>
+                <li><a  class="U-classification__item" href="#">氣泡酒(724)</a></li>
+                <li><a  class="U-classification__item" href="#">加烈酒(92)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortWineArea" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col4">
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortWineClassification" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li><a  class="U-classification__item" href="#">法定產區管制AC (2077)</a></li>
+                <li><a  class="U-classification__item" href="#">保證法定產區DOCG (618)</a></li>
+                <li><a  class="U-classification__item" href="#">美國葡萄酒法定產區AVA (583)</a></li>
+                <li><a  class="U-classification__item" href="#">紐澳產區分級GI (583)</a></li>
+                <li><a  class="U-classification__item" href="#">法定產區DOC (555)</a></li>
+                <li><a  class="U-classification__item" href="#">一級園 (555)</a></li>
+                <li><a  class="U-classification__item" href="#">地區餐酒IGT (454)</a></li>
+                <li><a  class="U-classification__item" href="#">法定產區DO (447)</a></li>
+                <li><a  class="U-classification__item" href="#">村莊級 (445)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克一級酒莊 (364)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克二級酒莊 (349)</a></li>
+                <li><a  class="U-classification__item" href="#">特級園 (287)</a></li>
+                <li><a  class="U-classification__item" href="#">格拉夫列級酒莊 (240)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克五級酒莊 (226)</a></li>
+                <li><a  class="U-classification__item" href="#">聖愛美濃列級酒莊 (220)</a></li>
+                <li><a  class="U-classification__item" href="#">聖愛美濃一級特等酒莊B (181)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克三級酒莊 (162)</a></li>
+                <li><a  class="U-classification__item" href="#">布根地地區級 (157)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克四級酒莊 (151)</a></li>
+                <li><a  class="U-classification__item" href="#">普級餐酒 (146)</a></li>
+                <li><a  class="U-classification__item" href="#">N/A (115)</a></li>
+                <li><a  class="U-classification__item" href="#">聖愛美濃一級特等酒莊A (114)</a></li>
+                <li><a  class="U-classification__item" href="#">保證法定產區DOCa/DOQ (109)</a></li>
+                <li><a  class="U-classification__item" href="#">聖愛美濃特等酒莊 (91)</a></li>
+                <li><a  class="U-classification__item" href="#">Quality Wine (80)</a></li>
+                <li><a  class="U-classification__item" href="#">索甸一級酒莊 (76)</a></li>
+                <li><a  class="U-classification__item" href="#">布爾喬亞級酒莊 (76)</a></li>
+                <li><a  class="U-classification__item" href="#">優質薄酒萊 (55)</a></li>
+                <li><a  class="U-classification__item" href="#">Wine of Origin (40)</a></li>
+                <li><a  class="U-classification__item" href="#">索甸優等一級酒莊 (35)</a></li>
+                <li><a  class="U-classification__item" href="#">DOP (25)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortWineComments" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li><a  class="U-classification__item" href="#">Robert Parker (3957)</a></li>
+                <li><a  class="U-classification__item" href="#">Jancis Robinson (3160)</a></li>
+                <li><a  class="U-classification__item" href="#">Wine Spectator (822)</a></li>
+                <li><a  class="U-classification__item" href="#">Wine Enthusiast (766)</a></li>
+                <li><a  class="U-classification__item" href="#">James Suckling (580)</a></li>
+                <li><a  class="U-classification__item" href="#">Burghound (465)</a></li>
+                <li><a  class="U-classification__item" href="#">Falstaff (463)</a></li>
+                <li><a  class="U-classification__item" href="#">Tim Atkin (331)</a></li>
+                <li><a  class="U-classification__item" href="#">Decanter Magazine (320)</a></li>
+                <li><a  class="U-classification__item" href="#">La Revue du Vin de France (306)</a></li>
+                <li><a  class="U-classification__item" href="#">Stephen Tanzer (252)</a></li>
+                <li><a  class="U-classification__item" href="#">2023 Buvons Nature (248)</a></li>
+                <li><a  class="U-classification__item" href="#">Jasper Morris (231)</a></li>
+                <li><a  class="U-classification__item" href="#">Buvons Nature (163)</a></li>
+                <li><a  class="U-classification__item" href="#">Vinum Magazine (154)</a></li>
+                <li><a  class="U-classification__item" href="#">Bettane & Desseauve (118)</a></li>
+                <li><a  class="U-classification__item" href="#">Guía Peñín (111)</a></li>
+                <li><a  class="U-classification__item" href="#">The Wine Front (107)</a></li>
+                <li><a  class="U-classification__item" href="#">Antonio Galloni (106)</a></li>
+                <li><a  class="U-classification__item" href="#">Jeannie Cho Lee (101)</a></li>
+                <li><a  class="U-classification__item" href="#">Le Guide Hachette des Vins (52)</a></li>
+                <li><a  class="U-classification__item" href="#">International Wine Challenge (47)</a></li>
+                <li><a  class="U-classification__item" href="#">Jeb Dunnuck (43)</a></li>
+                <li><a  class="U-classification__item" href="#">WSD Wine Awards (41)</a></li>
+                <li><a  class="U-classification__item" href="#">International Wine & Spirit Competition (33)</a></li>
+                <li><a  class="U-classification__item" href="#">Luca Maroni (27)</a></li>
+                <li><a  class="U-classification__item" href="#">James Halliday (26)</a></li>
+                <li><a  class="U-classification__item" href="#">Gilbert & Gaillard (22)</a></li>
+                <li><a  class="U-classification__item" href="#">Bob Campbell (18)</a></li>
+                <li><a  class="U-classification__item" href="#">Gambero Rosso (9)</a></li>
+                <li><a  class="U-classification__item" href="#">Jeremy Oliver (9)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortWinePrice" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li class="U-classification__itemTitle">單價</li>
+                <li><a  class="U-classification__item" href="#">低於 $500 (125)</a></li>
+                <li><a  class="U-classification__item" href="#">$500-1000 (1428)</a></li>
+                <li><a  class="U-classification__item" href="#">$1001-2000 (3313)</a></li>
+                <li><a  class="U-classification__item" href="#">$2001-3000 (1716)</a></li>
+                <li><a  class="U-classification__item" href="#">$3001-4000 (981)</a></li>
+                <li><a  class="U-classification__item" href="#">$4001-5000 (582)</a></li>
+                <li><a  class="U-classification__item" href="#">$5000 以上 (1606)</a></li>
+                <li class="U-classification__itemTitle">年份</li>
+                <li><a  class="U-classification__item" href="#">1920年之前 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">NV(無年份) (584)</a></li>
+                <li><a  class="U-classification__item" href="#">1920-1939年 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">1940-1959年 (13)</a></li>
+                <li><a  class="U-classification__item" href="#">1960-1979年 (100)</a></li>
+                <li><a  class="U-classification__item" href="#">1980-1999年 (383)</a></li>
+                <li><a  class="U-classification__item" href="#">2000-2009年 (1015)</a></li>
+                <li><a  class="U-classification__item" href="#">2010年至今 (9209)</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<% } else{ %>
+    <% } %>
+
+<!-- 分類找酒-烈酒館 -->
+<% if (page == 'spirits'){%>
+<section class="U-classification U-classification--spirits">
+    <ul class="U-classification__sortList">
+        <li class="U-classification__sort U-classification__title">分類找酒</li>
+        <li class="U-classification__sort U-classification__sortBTN active" data-target="sortSpiritsPopular"><span>熱門搜尋</span><span>類型</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSpiritsArea"><span>產區</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSpiritsFlavor"><span>特殊風味</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSpiritsComments"><span>評價</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSpiritsPrice"><span>單價</span><span>酒齡</span></li>
+        <li class="U-classification__sort">進階搜尋</li>
+        <li class="U-classification__sort">近期瀏覽</li>
+    </ul>
+    <div class="U-classification__itemList" id="sortSpiritsPopular">
+        <div class="U-classification__breadcrumb"><span><a href="index.html">首頁</a></span><span>烈酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li class="U-classification__itemTitle">熱門搜尋</li>
+                <li><a  class="U-classification__item" href="#">快速到貨 (1559)</a></li>
+                <li class="U-classification__itemTitle">類型</li>
+                <li><a  class="U-classification__item" href="#">單一麥芽威士忌 (835)</a></li>
+                <li><a  class="U-classification__item" href="#">調和麥芽威士忌 (74)</a></li>
+                <li><a  class="U-classification__item" href="#">單一穀物威士忌 (17)</a></li>
+                <li><a  class="U-classification__item" href="#">調和威士忌 (110)</a></li>
+                <li><a  class="U-classification__item" href="#">獨立裝瓶廠威士忌 (293)</a></li>
+                <li><a  class="U-classification__item" href="#">原酒威士忌 (89)</a></li>
+                <li><a  class="U-classification__item" href="#">琴酒 (142)</a></li>
+                <li><a  class="U-classification__item" href="#">蘭姆酒 (110)</a></li>
+                <li><a  class="U-classification__item" href="#">伏特加 (24)</a></li>
+                <li><a  class="U-classification__item" href="#">苦艾酒 (6)</a></li>
+                <li><a  class="U-classification__item" href="#">龍舌蘭 (15)</a></li>
+                <li><a  class="U-classification__item" href="#">利口酒 (62)</a></li>
+                <li><a  class="U-classification__item" href="#">梅斯卡 (6)</a></li>
+                <li><a  class="U-classification__item" href="#">調酒相關 (10)</a></li>
+                <li><a  class="U-classification__item" href="#">烈酒 (32)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortSpiritsArea" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>烈酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col4">
+                <li><a  class="U-classification__item" href="#">蘇格蘭 (959)</a></li>
+                <li><a  class="U-classification__item" href="#">台灣 (105)</a></li>
+                <li><a  class="U-classification__item" href="#">日本 (100)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (81)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (51)</a></li>
+                <li><a  class="U-classification__item" href="#">愛爾蘭 (49)</a></li>
+                <li><a  class="U-classification__item" href="#">英國 (43)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (38)</a></li>
+                <li><a  class="U-classification__item" href="#">南非 (29)</a></li>
+                <li><a  class="U-classification__item" href="#">瑞典 (27)</a></li>
+                <li><a  class="U-classification__item" href="#">墨西哥 (24)</a></li>
+                <li><a  class="U-classification__item" href="#">印度 (20)</a></li>
+                <li><a  class="U-classification__item" href="#">以色列 (17)</a></li>
+                <li><a  class="U-classification__item" href="#">巴貝多 (17)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (16)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (13)</a></li>
+                <li><a  class="U-classification__item" href="#">斯洛伐克 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">比利時 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">牙買加 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (10)</a></li>
+                <li><a  class="U-classification__item" href="#">芬蘭 (9)</a></li>
+                <li><a  class="U-classification__item" href="#">巴拿馬共和國 (9)</a></li>
+                <li><a  class="U-classification__item" href="#">大韓民國 (9)</a></li>
+                <li><a  class="U-classification__item" href="#">N/A (8)</a></li>
+                <li><a  class="U-classification__item" href="#">波蘭 (8)</a></li>
+                <li><a  class="U-classification__item" href="#">秘魯共和國 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">俄羅斯聯邦 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">菲律賓共和國 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">捷克 (6)</a></li>
+                <li><a  class="U-classification__item" href="#">聖多明加共和國 (6)</a></li>
+                <li><a  class="U-classification__item" href="#">古巴共和國 (6)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (5)</a></li>
+                <li><a  class="U-classification__item" href="#">委內瑞拉 (5)</a></li>
+                <li><a  class="U-classification__item" href="#">格瑞那達 (5)</a></li>
+                <li><a  class="U-classification__item" href="#">聖露西亞 (5)</a></li>
+                <li><a  class="U-classification__item" href="#">冰島 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">烏克蘭 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">千里達及托巴哥共和國 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">葡萄牙 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">加拿大 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">瑞士 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">荷蘭 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">香港 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">蓋亞那共和國 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">薩爾瓦多共和國 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">烏拉圭 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">斐濟共和國 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">寮人民民主共和國 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">哥倫比亞共和國 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">尼加拉瓜共和國 (1)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortSpiritsFlavor" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>烈酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col4">
+                <li><a  class="U-classification__item" href="#">波本桶 (286)</a></li>
+                <li><a  class="U-classification__item" href="#">雪莉桶 (231)</a></li>
+                <li><a  class="U-classification__item" href="#">泥煤 (102)</a></li>
+                <li><a  class="U-classification__item" href="#">歐露羅索雪莉桶 (87)</a></li>
+                <li><a  class="U-classification__item" href="#">葡萄酒桶 (38)</a></li>
+                <li><a  class="U-classification__item" href="#">美國白橡木桶 (37)</a></li>
+                <li><a  class="U-classification__item" href="#">PX雪莉桶 (36)</a></li>
+                <li><a  class="U-classification__item" href="#">波特桶 (35)</a></li>
+                <li><a  class="U-classification__item" href="#">其他 (32)</a></li>
+                <li><a  class="U-classification__item" href="#">紅酒桶 (20)</a></li>
+                <li><a  class="U-classification__item" href="#">蘭姆酒桶 (16)</a></li>
+                <li><a  class="U-classification__item" href="#">馬德拉桶 (15)</a></li>
+                <li><a  class="U-classification__item" href="#">馬撒拉桶 (11)</a></li>
+                <li><a  class="U-classification__item" href="#">特殊桶 (10)</a></li>
+                <li><a  class="U-classification__item" href="#">瑞典橡木桶 (8)</a></li>
+                <li><a  class="U-classification__item" href="#">水楢桶 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">白蘭地桶 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">索甸甜酒桶 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">林肯郡程序 (5)</a></li>
+                <li><a  class="U-classification__item" href="#">索甸甜酒桶 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">處女桶 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">蘋果白蘭地桶 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">菲諾雪莉桶 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">內比歐露 (1)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortSpiritsComments" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>烈酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li><a  class="U-classification__item" href="#">International Wine & Spirit Competition (72)</a></li>
+                <li><a  class="U-classification__item" href="#">San Francisco World Spirits Competition (68)</a></li>
+                <li><a  class="U-classification__item" href="#">International Spirits Challenge (33)</a></li>
+                <li><a  class="U-classification__item" href="#">2024 TW.WA 酒訊雜誌威士忌大賞 (31)</a></li>
+                <li><a  class="U-classification__item" href="#">World Whisky Award (27)</a></li>
+                <li><a  class="U-classification__item" href="#">Jim Murray (15)</a></li>
+                <li><a  class="U-classification__item" href="#">The Scotch Whisky Masters (8)</a></li>
+                <li><a  class="U-classification__item" href="#">The Spirits Business Awards (6)</a></li>
+                <li><a  class="U-classification__item" href="#">Ultimate Spirit Challenge (4)</a></li>
+                <li><a  class="U-classification__item" href="#">The Malt Maniacs Award (4)</a></li>
+                <li><a  class="U-classification__item" href="#">Berlin International Spirits Competition (3)</a></li>
+                <li><a  class="U-classification__item" href="#">San Francisco International Wine Competition (1)</a></li>
+                <li><a  class="U-classification__item" href="#">Los Angeles International Wine&Spirits Competition (1)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortSpiritsPrice" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>烈酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col4">
+                <li class="U-classification__itemTitle">單價</li>
+                <li><a  class="U-classification__item" href="#">低於 $500 (99)</a></li>
+                <li><a  class="U-classification__item" href="#">$500-1000 (241)</a></li>
+                <li><a  class="U-classification__item" href="#">$1001-2000 (500)</a></li>
+                <li><a  class="U-classification__item" href="#">$2001-3000 (325)</a></li>
+                <li><a  class="U-classification__item" href="#">$3001-4000 (188)</a></li>
+                <li><a  class="U-classification__item" href="#">$4001-5000 (87)</a></li>
+                <li><a  class="U-classification__item" href="#">$5000 以上 (331)</a></li>
+                <li class="U-classification__itemTitle">酒齡</li>
+                <li><a  class="U-classification__item" href="#">NV(無年份) (990)</a></li>
+                <li><a  class="U-classification__item" href="#">1966年 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">1979年 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">1984年 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">3年 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">4年 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">5年 (13)</a></li>
+                <li><a  class="U-classification__item" href="#">6年 (15)</a></li>
+                <li><a  class="U-classification__item" href="#">7年 (17)</a></li>
+                <li><a  class="U-classification__item" href="#">8年 (28)</a></li>
+                <li><a  class="U-classification__item" href="#">9年 (17)</a></li>
+                <li><a  class="U-classification__item" href="#">10年 (71)</a></li>
+                <li><a  class="U-classification__item" href="#">11年 (38)</a></li>
+                <li><a  class="U-classification__item" href="#">12年 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">13年 (30)</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<% } else{ %>
+    <% } %>
+
+<!-- 分類找酒-啤酒館 -->
+<% if (page == 'beer'){%>
+<section class="U-classification U-classification--beer">
+    <ul class="U-classification__sortList">
+        <li class="U-classification__sort U-classification__title">分類找酒</li>
+        <li class="U-classification__sort U-classification__sortBTN active" data-target="sortBeerPopular"><span>熱門搜尋</span><span>類型</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortBeerArea"><span>產區</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortBeerFlavor"><span>特殊原料</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortBeerComments"><span>評價</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortBeerPrice"><span>單價</span><span>酒精濃度</span></li>
+        <li class="U-classification__sort">進階搜尋</li>
+        <li class="U-classification__sort">近期瀏覽</li>
+    </ul>
+    <div class="U-classification__itemList" id="sortBeerPopular">
+        <div class="U-classification__breadcrumb"><span><a href="index.html">首頁</a></span><span>啤酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col3">
+                <li class="U-classification__itemTitle">熱門搜尋</li>
+                <li><a  class="U-classification__item" href="#">快速到貨 (248)</a></li>
+                <li><a  class="U-classification__item" href="#">即飲調酒 (23)</a></li>
+                <li><a  class="U-classification__item" href="#">梨子＆蘋果酒 (22)</a></li>
+                <li><a  class="U-classification__item" href="#">小麥啤酒 (17)</a></li>
+                <li><a  class="U-classification__item" href="#">各種愛爾 (16)</a></li>
+                <li><a  class="U-classification__item" href="#">修道院／比利時啤酒 (16)</a></li>
+                <li><a  class="U-classification__item" href="#">蜂蜜酒 (13)</a></li>
+                <li><a  class="U-classification__item" href="#">波特與司陶特 (10)</a></li>
+                <li><a  class="U-classification__item" href="#">水果／季節啤酒 (9)</a></li>
+                <li><a  class="U-classification__item" href="#">拉格家族 (9)</a></li>
+                <li><a  class="U-classification__item" href="#">印度淺色愛爾(IPA) (8)</a></li>
+                <li><a  class="U-classification__item" href="#">酸啤酒 (8)</a></li>
+                <li><a  class="U-classification__item" href="#">無酒精 (2)</a></li>
+                <li class="U-classification__itemTitle">類型</li>
+                <li><a  class="U-classification__item" href="#">印度淺色愛爾 (37)</a></li>
+                <li><a  class="U-classification__item" href="#">即飲調酒 (23)</a></li>
+                <li><a  class="U-classification__item" href="#">水果啤酒 (20)</a></li>
+                <li><a  class="U-classification__item" href="#">比利時愛爾 (18)</a></li>
+                <li><a  class="U-classification__item" href="#">蘋果酒 (16)</a></li>
+                <li><a  class="U-classification__item" href="#">啤酒 (14)</a></li>
+                <li><a  class="U-classification__item" href="#">蜂蜜酒 (13)</a></li>
+                <li><a  class="U-classification__item" href="#">歐洲酸愛爾 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">桶陳啤酒 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">比利時烈愛爾 (10)</a></li>
+                <li><a  class="U-classification__item" href="#">美式淺色愛爾 (9)</a></li>
+                <li><a  class="U-classification__item" href="#">德式小麥啤酒 (8)</a></li>
+                <li><a  class="U-classification__item" href="#">美式波特與司陶特 (8)</a></li>
+                <li><a  class="U-classification__item" href="#">無酒精飲品 (8)</a></li>
+                <li><a  class="U-classification__item" href="#">歷史性傳統啤酒 (6)</a></li>
+                <li><a  class="U-classification__item" href="#">美式野菌發酵愛爾 (5)</a></li>
+                <li><a  class="U-classification__item" href="#">美式琥珀與棕色愛爾 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">修道院啤酒 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">特色蘋果酒 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">典型美式啤酒 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">國際拉格啤酒 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">香料啤酒 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">歐洲淺色麥芽拉格 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">英式苦啤酒 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">英式棕色啤酒 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">蘇格蘭愛爾 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">英式烈愛爾 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">美式烈愛爾 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">梨子酒 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">歐洲淺色苦啤酒 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">歐洲琥珀麥芽拉格 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">歐洲烈拉格 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">愛爾蘭啤酒 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">英式深色啤酒 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">另類發酵物啤酒 (1)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortBeerArea" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>啤酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col4">
+                <li><a  class="U-classification__item" href="#">台灣 (146)</a></li>
+                <li><a  class="U-classification__item" href="#">英國 (26)</a></li>
+                <li><a  class="U-classification__item" href="#">日本 (23)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (22)</a></li>
+                <li><a  class="U-classification__item" href="#">比利時 (18)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (8)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (8)</a></li>
+                <li><a  class="U-classification__item" href="#">泰國 (6)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">挪威 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">瑞典 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">大韓民國 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">N/A (1)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortBeerFlavor" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>啤酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li><a  class="U-classification__item" href="#">台灣茶葉 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">台灣茉莉花 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">可可豆 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">台灣冬瓜茶磚 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">巧克力 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">百香果 (1)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortBeerComments" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>啤酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li><a  class="U-classification__item" href="#">RateBeer Overall (17)</a></li>
+                <li><a  class="U-classification__item" href="#">Beeradvocate (16)</a></li>
+                <li><a  class="U-classification__item" href="#">RateBeer Style (15)</a></li>
+                <li><a  class="U-classification__item" href="#">Beeradvocate Bros (11)</a></li>
+                <li><a  class="U-classification__item" href="#">World Beer Award (8)</a></li>
+                <li><a  class="U-classification__item" href="#">International Beer Challenge (6)</a></li>
+                <li><a  class="U-classification__item" href="#">International Beer Cup (4)</a></li>
+                <li><a  class="U-classification__item" href="#">Australian International Beer Award (4)</a></li>
+                <li><a  class="U-classification__item" href="#">World Beer Cup (2)</a></li>
+                <li><a  class="U-classification__item" href="#">European Beer Star (1)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortBeerPrice" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>啤酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li class="U-classification__itemTitle">單價</li>
+                <li><a  class="U-classification__item" href="#">低於 $100 (99)</a></li>
+                <li><a  class="U-classification__item" href="#">$101-200 (500)</a></li>
+                <li><a  class="U-classification__item" href="#">$201-300 (325)</a></li>
+                <li><a  class="U-classification__item" href="#">$301-400 (188)</a></li>
+                <li><a  class="U-classification__item" href="#">$401-500 (87)</a></li>
+                <li><a  class="U-classification__item" href="#">$500 以上 (331)</a></li>
+                <li class="U-classification__itemTitle">酒精濃度</li>
+                <li><a  class="U-classification__item" href="#">低於 4% (53)</a></li>
+                <li><a  class="U-classification__item" href="#">4-6% (98)</a></li>
+                <li><a  class="U-classification__item" href="#">6-8% (49)</a></li>
+                <li><a  class="U-classification__item" href="#">8-10% (45)</a></li>
+                <li><a  class="U-classification__item" href="#">10% 以上 (42)</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<% } else{ %>
+    <% } %>
+
+<!-- 分類找酒-清酒館 -->
+<% if (page == 'sake'){%>
+<section class="U-classification U-classification--sake">
+    <ul class="U-classification__sortList">
+        <li class="U-classification__sort U-classification__title">分類找酒</li>
+        <li class="U-classification__sort U-classification__sortBTN active" data-target="sortSakePopular"><span>熱門搜尋</span><span>類型</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSakeArea"><span>產區</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSakeFlavor"><span>米種</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSakeProcess"><span>特殊製程</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSakeComments"><span>評價</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortSakePrice"><span>日本酒度</span><span>適飲溫度</span><span>單價</span></li>
+        <li class="U-classification__sort">進階搜尋</li>
+        <li class="U-classification__sort">近期瀏覽</li>
+    </ul>
+    <div class="U-classification__itemList" id="sortSakePopular">
+        <div class="U-classification__breadcrumb"><span><a href="index.html">首頁</a></span><span>清酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col3">
+                <li class="U-classification__itemTitle">熱門搜尋</li>
+                <li><a  class="U-classification__item" href="#">快速到貨 (627)</a></li>
+                <li><a  class="U-classification__item" href="#">薰酒 (73)</a></li>
+                <li><a  class="U-classification__item" href="#">爽酒 (28)</a></li>
+                <li><a  class="U-classification__item" href="#">熟酒 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">醇酒 (28)</a></li>
+                <li class="U-classification__itemTitle">類型</li>
+                <li><a  class="U-classification__item" href="#">純米大吟釀 (148)</a></li>
+                <li><a  class="U-classification__item" href="#">大吟釀 (21)</a></li>
+                <li><a  class="U-classification__item" href="#">純米吟釀 (173)</a></li>
+                <li><a  class="U-classification__item" href="#">吟釀 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">純米酒 (450)</a></li>
+                <li><a  class="U-classification__item" href="#">本釀造 (13)</a></li>
+                <li><a  class="U-classification__item" href="#">普通酒 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">梅酒 (72)</a></li>
+                <li><a  class="U-classification__item" href="#">燒酌 (59)</a></li>
+                <li><a  class="U-classification__item" href="#">水果酒/其它 (70)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortSakeArea" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>清酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col4">
+                <li>日本</li>
+                <li><a  class="U-classification__item" href="#">東北地方 (169)</a></li>
+                <li><a  class="U-classification__item" href="#">九州 (124)</a></li>
+                <li><a  class="U-classification__item" href="#">近畿地方 (118)</a></li>
+                <li><a  class="U-classification__item" href="#">關東地方 (102)</a></li>
+                <li><a  class="U-classification__item" href="#">甲信越地方 (65)</a></li>
+                <li><a  class="U-classification__item" href="#">中國地方 (62)</a></li>
+                <li><a  class="U-classification__item" href="#">東海地方 (58)</a></li>
+                <li><a  class="U-classification__item" href="#">四國 (39)</a></li>
+                <li><a  class="U-classification__item" href="#">北陸地方 (38)</a></li>
+                <li><a  class="U-classification__item" href="#">北海道 (10)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortSakeFlavor" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>清酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col4">
+                <li><a  class="U-classification__item" href="#">山田錦 (178)</a></li>
+                <li><a  class="U-classification__item" href="#">酒造好適米（不公開） (85)</a></li>
+                <li><a  class="U-classification__item" href="#">五百萬石 (70)</a></li>
+                <li><a  class="U-classification__item" href="#">雄町 (34)</a></li>
+                <li><a  class="U-classification__item" href="#">美山錦 (20)</a></li>
+                <li><a  class="U-classification__item" href="#">出羽燦燦 (17)</a></li>
+                <li><a  class="U-classification__item" href="#">愛山 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">秋田酒小町 (10)</a></li>
+                <li><a  class="U-classification__item" href="#">夢之香 (10)</a></li>
+                <li><a  class="U-classification__item" href="#">出羽之里 (9)</a></li>
+                <li><a  class="U-classification__item" href="#">夢一獻 (9)</a></li>
+                <li><a  class="U-classification__item" href="#">吟銀河 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">八反錦 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">人心地 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">一見鍾情 (7)</a></li>
+                <li><a  class="U-classification__item" href="#">玉榮 (5)</a></li>
+                <li><a  class="U-classification__item" href="#">大瀨戶 (5)</a></li>
+                <li><a  class="U-classification__item" href="#">吟風 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">龜之尾 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">酒未來 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">松山三井 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">吟之夢 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">揖斐之譽 (4)</a></li>
+                <li><a  class="U-classification__item" href="#">雪女神 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">神力 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">譽富士 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">八反錦1号 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">強力 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">あさひの夢 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">美郷錦 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">高嶺錦 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">吟吹雪 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">山田穂 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">辨慶 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">佐香錦 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">八反35 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">出羽綺羅利 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">艷姬 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">朝日 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">華吹雪 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">吟乙女 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">羽州譽 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">山酒4號 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">夢山水 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">雄山錦 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">渡船 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">滋賀渡舟6號 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">祝 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">兵庫夢錦 (1)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortSakeProcess" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>清酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li><a  class="U-classification__item" href="#">生酒 (45)</a></li>
+                <li><a  class="U-classification__item" href="#">無濾過 (40)</a></li>
+                <li><a  class="U-classification__item" href="#">原酒 (33)</a></li>
+                <li><a  class="U-classification__item" href="#">氣泡清酒 (19)</a></li>
+                <li><a  class="U-classification__item" href="#">山廢 (16)</a></li>
+                <li><a  class="U-classification__item" href="#">生酛 (14)</a></li>
+                <li><a  class="U-classification__item" href="#">秋卸酒 (11)</a></li>
+                <li><a  class="U-classification__item" href="#">生儲藏 (9)</a></li>
+                <li><a  class="U-classification__item" href="#">濁酒 (8)</a></li>
+                <li><a  class="U-classification__item" href="#">雫酒 (6)</a></li>
+                <li><a  class="U-classification__item" href="#">新酒 (6)</a></li>
+                <li><a  class="U-classification__item" href="#">中取 (3)</a></li>
+                <li><a  class="U-classification__item" href="#">水酛 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">菩提酛 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">生詰 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">古酒 (1)</a></li>
+                <li><a  class="U-classification__item" href="#">貴釀酒 (1)</a></li>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortSakeComments" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>清酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li><a  class="U-classification__item" href="#">Sake Week 清酒銘柄快閃活動 (19)</a></li>
+                <li><a  class="U-classification__item" href="#">International Wine Challenge (6)</a></li>
+                <li><a  class="U-classification__item" href="#">The Fine SAKE Award (6)</a></li>
+                <li><a  class="U-classification__item" href="#">Kura Master (4)</a></li>
+                <li><a  class="U-classification__item" href="#">Los Angeles International Wine Competition (1)</a></li>
+                <li><a  class="U-classification__item" href="#">Ultimate Wine Challenge (1)</a></li>
+                <li><a  class="U-classification__item" href="#">SAKE Competition (1)</a></li>
+                <li><a  class="U-classification__item" href="#">Kan Sake Award (1)</a></li>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortSakePrice" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>清酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col4">
+                <li class="U-classification__itemTitle">日本酒度</li>
+                <li><a  class="U-classification__item" href="#">非常辛口 (26)</a></li>
+                <li><a  class="U-classification__item" href="#">辛口 (172)</a></li>
+                <li><a  class="U-classification__item" href="#">甘口 (44)</a></li>
+                <li><a  class="U-classification__item" href="#">非常甘口 (24)</a></li>
+                <li class="U-classification__itemTitle">適飲溫度</li>
+                <li><a  class="U-classification__item" href="#">建議冰鎮 (541)</a></li>
+                <li><a  class="U-classification__item" href="#">常溫OK (217)</a></li>
+                <li><a  class="U-classification__item" href="#">建議溫熱 (128)</a></li>
+                <li><a  class="U-classification__item" href="#">冷熱皆宜 (124)</a></li>
+                <li class="U-classification__itemTitle">單價</li>
+                <li><a  class="U-classification__item" href="#">低於 $500 (25)</a></li>
+                <li><a  class="U-classification__item" href="#">$500-1000 (154)</a></li>
+                <li><a  class="U-classification__item" href="#">$1001-2000 (486)</a></li>
+                <li><a  class="U-classification__item" href="#">$2001-3000 (94)</a></li>
+                <li><a  class="U-classification__item" href="#">$3001-4000 (29)</a></li>
+                <li><a  class="U-classification__item" href="#">$4001-5000 (20)</a></li>
+                <li><a  class="U-classification__item" href="#">$5000 以上 (19)</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<% } else{ %>
+    <% } %>

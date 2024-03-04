@@ -1,0 +1,39 @@
+// ------------------------ theme color
+// Delivery Color
+$deliveryColor-fast: #E3A037;
+$deliveryColor-normal: #CA3D4D;
+$deliveryColor-preorder: #43AAB1;
+// BG Color
+$BGColor-primary: #F4E2D0;
+$BGColor-labelDark: #B7ABA5;
+$BGColor-labelLight: #F1EDEC;
+$BGColor-grayLight: #F5F5F4;
+// Font Color
+$fontColor-black: #000000;
+$fontColor-dark: #4D4D4D;
+$fontColor-light: #727272;
+$fontColor-disable: #a6a6a6;
+$fontColor-primary: #C27847;
+$fontColor-secondary: #4D1904;
+// Common Color
+$commonColor-primary: #C88370;
+$commonColor-highlight: #AA6373;
+$commonColor-favorite: #C17272;
+
+
+// ------------------------ fonts
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Kode+Mono:wght@400..700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Teko:wght@300..700&display=swap');
+
+// font-family
+$fontFamily-IBM: 'IBM Plex Sans JP', sans-serif;
+$fontFamily-Libre: 'Libre Franklin', sans-serif;
+$fontFamily-NotoSansTC: 'Noto Sans TC', sans-serif;
+$fontFamily-Teko: 'Teko', sans-serif;
+$fontFamily-chevron: 'Nanum Myeongjo', serif;
+
+// font-sise
+$font-s: 12px;
+$font-m: 15px;
+$font-l: 18px;
+$font-xl: 24px;

@@ -1,0 +1,353 @@
+<nav class="nav nav">
+    <div class="nav__items">
+        <label class="nav__item nav__item__hamburger" for="burger">
+          <input type="checkbox" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <h1 class="nav__item nav__item__logo"><a class="nav__item nav__item__logoWrap" href="index.html">iCheers愛酒窩</a></h1>
+        <div class="nav__item nav__item__searchbar">
+          <button class="nav__item__searchbar__trigger"><span class="icon_search"><img  src="../assets/images/icon_search.svg" alt=""></span><span class="icon_foto"><img  src="../assets/images/icon_foto.svg" alt=""></span></button>
+        </div>
+        <div class="nav__item nav__item__infos">
+          <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="../assets/images/icon_cwc.svg" alt="線上酒窖"></span>線上酒窖</a>
+          <!-- 未登入 -->
+          <!-- <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="../assets/images/icon_account.svg" alt="登入/加入會員"></span>登入/加入會員</a> -->
+          <!-- 已登入 -->
+          <div class="nav__item__info __account">
+            <a class="" href="#"><span class="icon_cwc"><img src="../assets/images/icon_account.svg" alt="登入/加入會員"></span>ifen***，您好</a>
+            <div class="dropdown_content">
+              <a href="">會員專區</a>
+              <a href="">訂單記錄</a>
+            </div>
+          </div>
+          <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="../assets/images/icon_line_nav.svg" alt="加入官方line"></span></a>
+          <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="../assets/images/icon_favorite.svg" alt="追蹤清單"></span></a>
+          <a class="nav__item__info __mylist" href="#"><span class="icon_mylist"><img src="../assets/images/icon_mylist.svg" alt="我的清單"></span><span class="icon_mylist_number">10</span></a>
+        </div>
+        
+    </div>
+    <form class="nav__item__searchbar__form" style="display: none;" action="">
+      <div class="__inputs">
+        <div class="radio-inputs">
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_wine" checked="">
+            <span class="name">葡萄酒</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_spirits">
+            <span class="name">烈酒</span>
+          </label>  
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_beer">
+            <span class="name">啤酒</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_sake">
+            <span class="name">清酒</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="__inputs">
+        <!-- 類型找酒--wine -->
+        <div class="select-box select-box__type" id="Type_wine">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="0" value="1" name="Type_wine" checked="checked"/>
+              <p class="select-box__input-text">葡萄酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="1" value="2" name="Type_wine"/>
+              <p class="select-box__input-text">紅酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="2" value="3" name="Type_wine"/>
+              <p class="select-box__input-text">白酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="3" value="4" name="Type_wine"/>
+              <p class="select-box__input-text">粉紅酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="4" value="5" name="Type_wine"/>
+              <p class="select-box__input-text">甜酒</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="0" aria-hidden="aria-hidden">葡萄酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="1" aria-hidden="aria-hidden">紅酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="2" aria-hidden="aria-hidden">白酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="3" aria-hidden="aria-hidden">粉紅酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="4" aria-hidden="aria-hidden">甜酒</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 類型找酒--spirits -->
+        <div class="select-box select-box__type" id="Type_spirits" style="display: none;">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_0" value="1" name="Type_spirits" checked="checked"/>
+              <p class="select-box__input-text">烈酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_1" value="2" name="Type_spirits"/>
+              <p class="select-box__input-text">單一麥芽威士忌</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_2" value="3" name="Type_spirits"/>
+              <p class="select-box__input-text">調和麥芽威士忌</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_3" value="4" name="Type_spirits"/>
+              <p class="select-box__input-text">單一穀物威士忌</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_4" value="5" name="Type_spirits"/>
+              <p class="select-box__input-text">調和威士忌</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="Type_spirits_0" aria-hidden="aria-hidden">烈酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_1" aria-hidden="aria-hidden">單一麥芽威士忌</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_2" aria-hidden="aria-hidden">調和麥芽威士忌</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_3" aria-hidden="aria-hidden">單一穀物威士忌</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_4" aria-hidden="aria-hidden">調和威士忌</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 類型找酒--beer -->
+        <div class="select-box select-box__type" id="Type_beer" style="display: none;">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_0" value="1" name="Type_beer" checked="checked"/>
+              <p class="select-box__input-text">啤酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_1" value="2" name="Type_beer"/>
+              <p class="select-box__input-text">各種愛爾</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_2" value="3" name="Type_beer"/>
+              <p class="select-box__input-text">梨子&蘋果酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_3" value="4" name="Type_beer"/>
+              <p class="select-box__input-text">即飲調酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_4" value="5" name="Type_beer"/>
+              <p class="select-box__input-text">小麥啤酒</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="Type_beer_0" aria-hidden="aria-hidden">啤酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_1" aria-hidden="aria-hidden">各種愛爾</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_2" aria-hidden="aria-hidden">梨子&蘋果酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_3" aria-hidden="aria-hidden">即飲調酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_4" aria-hidden="aria-hidden">小麥啤酒</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 類型找酒--sake -->
+        <div class="select-box select-box__type" id="Type_sake" style="display: none;">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_0" value="1" name="Type_sake" checked="checked"/>
+              <p class="select-box__input-text">清酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_1" value="2" name="Type_sake"/>
+              <p class="select-box__input-text">純米大吟釀</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_2" value="3" name="Type_sake"/>
+              <p class="select-box__input-text">大吟釀</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_3" value="4" name="Type_sake"/>
+              <p class="select-box__input-text">純米吟釀</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_4" value="5" name="Type_sake"/>
+              <p class="select-box__input-text">吟釀</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="Type_sake_0" aria-hidden="aria-hidden">清酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_1" aria-hidden="aria-hidden">純米大吟釀</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_2" aria-hidden="aria-hidden">大吟釀</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_3" aria-hidden="aria-hidden">純米吟釀</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_4" aria-hidden="aria-hidden">吟釀</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 價位分佈 -->
+        <div class="select-box">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_0" value="price_0" name="Price" checked="checked"/>
+              <p class="select-box__input-text">所有價位</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_1" value="price_1" name="Price"/>
+              <p class="select-box__input-text">低於$500</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_2" value="price_2" name="Price"/>
+              <p class="select-box__input-text">$500-$1000</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_3" value="price_3" name="Price"/>
+              <p class="select-box__input-text">$1001-$2000</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_4" value="price_4" name="Price"/>
+              <p class="select-box__input-text">$2001-$3000</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="price_0" aria-hidden="aria-hidden">所有價位</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_1" aria-hidden="aria-hidden">低於$500</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_2" aria-hidden="aria-hidden">$500-$1000</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_3" aria-hidden="aria-hidden">$1001-$2000</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_4" aria-hidden="aria-hidden">$2001-$3000</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 到貨時間 -->
+        <div class="select-box">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_0" value="delivery_0" name="Delivery" checked="checked"/>
+              <p class="select-box__input-text">到貨時間</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_1" value="delivery_1" name="Delivery"/>
+              <p class="select-box__input-text">雙北當日配</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_2" value="delivery_2" name="Delivery"/>
+              <p class="select-box__input-text">快速到貨</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_3" value="delivery_3" name="Delivery"/>
+              <p class="select-box__input-text">一般到貨</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_4" value="delivery_4" name="Delivery"/>
+              <p class="select-box__input-text">超值預購</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="delivery_0" aria-hidden="aria-hidden">到貨時間</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_1" aria-hidden="aria-hidden">雙北當日配<span>兩點下單今天到</span></label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_2" aria-hidden="aria-hidden">快速到貨<span>三點下單隔天到</span></label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_3" aria-hidden="aria-hidden">一般到貨<span>3-5個工作天</span></label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_4" aria-hidden="aria-hidden">超值預購</label>
+            </li>
+          </ul>
+        </div>
+        
+        <input class="__inputs_text" type="text" placeholder="請輸入關鍵字">
+        <button class="__inputs_searchByPhoto"></button>
+        <input class="__inputs_submit" type="submit" value="搜尋"> 
+      </div>
+      
+      
+    </form>
+</nav>
+<div class="overlay"></div>
+<ul class="nav__item__menu">
+  <li>
+    <% if (page == 'wine'){ %>
+      <a class="nav__item__menuWine--active" href="index_wine.html"><span class="icon_wine"><img src="../assets/images/icon_wine.svg" alt=""></span>葡萄酒館</a>
+    <% } else{ %>
+      <a href="index_wine.html"><span class="icon_wine"><img src="../assets/images/icon_wine.svg" alt=""></span>葡萄酒館</a>
+      <% } %>  
+      <a class="nav__item__menu_BnB" href="#">找波爾多</a>
+      <a class="nav__item__menu_BnB" href="#">找布根地</a>
+
+    <% if (page == 'spirits'){ %>
+      <a class="nav__item__menuSpirits--active" href="index_spirits.html"><span class="icon_spirits"><img src="../assets/images/icon_spirits.svg" alt=""></span>烈酒館</a>
+    <% } else{ %>
+      <a href="index_spirits.html"><span class="icon_spirits"><img src="../assets/images/icon_spirits.svg" alt=""></span>烈酒館</a>
+      <% } %>  
+
+    <% if (page == 'beer'){ %>
+      <a class="nav__item__menuBeer--active" href="index_beer.html"><span class="icon_beer"><img src="../assets/images/icon_beer.svg" alt=""></span>啤酒館</a>
+    <% } else{ %>
+      <a href="index_beer.html"><span class="icon_beer"><img src="../assets/images/icon_beer.svg" alt=""></span>啤酒館</a>
+      <% } %> 
+
+    <% if (page == 'sake'){ %>  
+      <a class="nav__item__menuSake--active" href="index_sake.html"><span class="icon_sake"><img src="../assets/images/icon_sake.svg" alt=""></span>清酒館</a>
+      <% } else{ %>
+        <a href="index_sake.html"><span class="icon_sake"><img src="../assets/images/icon_sake.svg" alt=""></span>清酒館</a>
+        <% } %> 
+  </li>
+  <li>
+    <a href="#">進階搜尋</a>
+    <a href="#">近期瀏覽</a>
+    <a href="#">沒有收到確認信?</a>
+  </li>
+  <li>
+    <a href="#"><span class="icon_account"><img src="../assets/images/icon_account.svg" alt=""></span>登入/加入會員</a>
+    <a href="#"><span class="icon_cwc"><img src="../assets/images/icon_cwc.svg" alt=""></span>線上酒窖</a>
+  </li>
+</ul>

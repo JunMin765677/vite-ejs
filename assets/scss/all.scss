@@ -1,0 +1,18 @@
+@import './config/reset';
+// bootstrap
+@import './config/bootstrap.scss';
+// Owl Carousel
+@import './config/owl.carousel.min.scss';
+@import './config/owl.theme.default.min.scss';
+
+@import './config/variables.scss';
+@import './config/mixin.scss';
+
+@import './config/style.scss';
+
+@import './layout/nav.scss';
+@import './layout/warning';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';

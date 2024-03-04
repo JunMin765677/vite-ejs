@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="iCheers愛酒窩-綜合首頁" />
+    <!-- <meta property="og:image" content="預覽圖 URL" /> -->
+    <meta property="og:description" content="讓你窩在家就能享受葡萄酒" />
+    <title>iCheers愛酒窩-烈酒館</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.icheers.tw/iCheers/Content/images/drop.ico">
+    <!-- 定義變數 -->
+    <% const page = 'spirits';%>
+  </head>
+  <body>
+    <%- include('./layout/nav',{page: page}); -%>
+    <%- include('./components/B-carousel'); -%>
+    <div class="layout__doubleColumn">
+      <%- include('./components/U-classification',{page: page}); -%>
+      <%- include('./components/D-topics',{page: page}); -%>
+    </div>
+    <%- include('./components/R-keywords') -%>
+    <%- include('./components/K-limitedtimeOffer') -%>
+    <%- include('./components/T-setPrice') -%>
+    <%- include('./components/L-itemsRanking') -%>
+    <%- include('./components/M-itemList') -%>
+    <%- include('./components/N-freeGift') -%>
+    <%- include('./components/S_brands') -%>
+    <%- include('./components/O-articles-activity') -%>
+    <%- include('./components/Q-articles-items') -%>
+    <%- include('./components/G-banners'); -%>
+    <%- include('./layout/footer'); -%>
+    <%- include('./layout/warning'); -%>
+    
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
