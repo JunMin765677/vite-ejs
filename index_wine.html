@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="iCheers愛酒窩-綜合首頁" />
+    <!-- <meta property="og:image" content="預覽圖 URL" /> -->
+    <meta property="og:description" content="讓你窩在家就能享受葡萄酒" />
+    <title>iCheers愛酒窩-葡萄酒館</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.icheers.tw/iCheers/Content/images/drop.ico">
+    <!-- 定義變數 -->
+    
+    <script type="module" crossorigin src="/iCheers-WebRevision/assets/main-49f075ba.js"></script>
+    <link rel="stylesheet" href="/iCheers-WebRevision/assets/main-4e03731e.css">
+  </head>
+  <body>
+    <nav class="nav nav">
+    <div class="nav__items">
+        <label class="nav__item nav__item__hamburger" for="burger">
+          <input type="checkbox" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <h1 class="nav__item nav__item__logo"><a class="nav__item nav__item__logoWrap" href="index.html">iCheers愛酒窩</a></h1>
+        <div class="nav__item nav__item__searchbar">
+          <button class="nav__item__searchbar__trigger"><span class="icon_search"><img  src="/iCheers-WebRevision/images/icon_search-b285b984.svg" alt=""></span><span class="icon_foto"><img  src="/iCheers-WebRevision/images/icon_foto-28111c97.svg" alt=""></span></button>
+        </div>
+        <div class="nav__item nav__item__infos">
+          <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_cwc-4bb3ff74.svg" alt="線上酒窖"></span>線上酒窖</a>
+          <!-- 未登入 -->
+          <!-- <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="../assets/images/icon_account.svg" alt="登入/加入會員"></span>登入/加入會員</a> -->
+          <!-- 已登入 -->
+          <div class="nav__item__info __account">
+            <a class="" href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_account-e22082ed.svg" alt="登入/加入會員"></span>ifen***，您好</a>
+            <div class="dropdown_content">
+              <a href="">會員專區</a>
+              <a href="">訂單記錄</a>
+            </div>
+          </div>
+          <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_line_nav-5c043677.svg" alt="加入官方line"></span></a>
+          <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_favorite-0b597b23.svg" alt="追蹤清單"></span></a>
+          <a class="nav__item__info __mylist" href="#"><span class="icon_mylist"><img src="/iCheers-WebRevision/images/icon_mylist-7313cf9a.svg" alt="我的清單"></span><span class="icon_mylist_number">10</span></a>
+        </div>
+        
+    </div>
+    <form class="nav__item__searchbar__form" style="display: none;" action="">
+      <div class="__inputs">
+        <div class="radio-inputs">
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_wine" checked="">
+            <span class="name">葡萄酒</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_spirits">
+            <span class="name">烈酒</span>
+          </label>  
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_beer">
+            <span class="name">啤酒</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_sake">
+            <span class="name">清酒</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="__inputs">
+        <!-- 類型找酒--wine -->
+        <div class="select-box select-box__type" id="Type_wine">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="0" value="1" name="Type_wine" checked="checked"/>
+              <p class="select-box__input-text">葡萄酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="1" value="2" name="Type_wine"/>
+              <p class="select-box__input-text">紅酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="2" value="3" name="Type_wine"/>
+              <p class="select-box__input-text">白酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="3" value="4" name="Type_wine"/>
+              <p class="select-box__input-text">粉紅酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="4" value="5" name="Type_wine"/>
+              <p class="select-box__input-text">甜酒</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="0" aria-hidden="aria-hidden">葡萄酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="1" aria-hidden="aria-hidden">紅酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="2" aria-hidden="aria-hidden">白酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="3" aria-hidden="aria-hidden">粉紅酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="4" aria-hidden="aria-hidden">甜酒</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 類型找酒--spirits -->
+        <div class="select-box select-box__type" id="Type_spirits" style="display: none;">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_0" value="1" name="Type_spirits" checked="checked"/>
+              <p class="select-box__input-text">烈酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_1" value="2" name="Type_spirits"/>
+              <p class="select-box__input-text">單一麥芽威士忌</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_2" value="3" name="Type_spirits"/>
+              <p class="select-box__input-text">調和麥芽威士忌</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_3" value="4" name="Type_spirits"/>
+              <p class="select-box__input-text">單一穀物威士忌</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_4" value="5" name="Type_spirits"/>
+              <p class="select-box__input-text">調和威士忌</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="Type_spirits_0" aria-hidden="aria-hidden">烈酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_1" aria-hidden="aria-hidden">單一麥芽威士忌</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_2" aria-hidden="aria-hidden">調和麥芽威士忌</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_3" aria-hidden="aria-hidden">單一穀物威士忌</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_4" aria-hidden="aria-hidden">調和威士忌</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 類型找酒--beer -->
+        <div class="select-box select-box__type" id="Type_beer" style="display: none;">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_0" value="1" name="Type_beer" checked="checked"/>
+              <p class="select-box__input-text">啤酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_1" value="2" name="Type_beer"/>
+              <p class="select-box__input-text">各種愛爾</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_2" value="3" name="Type_beer"/>
+              <p class="select-box__input-text">梨子&蘋果酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_3" value="4" name="Type_beer"/>
+              <p class="select-box__input-text">即飲調酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_4" value="5" name="Type_beer"/>
+              <p class="select-box__input-text">小麥啤酒</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="Type_beer_0" aria-hidden="aria-hidden">啤酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_1" aria-hidden="aria-hidden">各種愛爾</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_2" aria-hidden="aria-hidden">梨子&蘋果酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_3" aria-hidden="aria-hidden">即飲調酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_4" aria-hidden="aria-hidden">小麥啤酒</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 類型找酒--sake -->
+        <div class="select-box select-box__type" id="Type_sake" style="display: none;">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_0" value="1" name="Type_sake" checked="checked"/>
+              <p class="select-box__input-text">清酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_1" value="2" name="Type_sake"/>
+              <p class="select-box__input-text">純米大吟釀</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_2" value="3" name="Type_sake"/>
+              <p class="select-box__input-text">大吟釀</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_3" value="4" name="Type_sake"/>
+              <p class="select-box__input-text">純米吟釀</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_4" value="5" name="Type_sake"/>
+              <p class="select-box__input-text">吟釀</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="Type_sake_0" aria-hidden="aria-hidden">清酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_1" aria-hidden="aria-hidden">純米大吟釀</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_2" aria-hidden="aria-hidden">大吟釀</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_3" aria-hidden="aria-hidden">純米吟釀</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_4" aria-hidden="aria-hidden">吟釀</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 價位分佈 -->
+        <div class="select-box">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_0" value="price_0" name="Price" checked="checked"/>
+              <p class="select-box__input-text">所有價位</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_1" value="price_1" name="Price"/>
+              <p class="select-box__input-text">低於$500</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_2" value="price_2" name="Price"/>
+              <p class="select-box__input-text">$500-$1000</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_3" value="price_3" name="Price"/>
+              <p class="select-box__input-text">$1001-$2000</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_4" value="price_4" name="Price"/>
+              <p class="select-box__input-text">$2001-$3000</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="price_0" aria-hidden="aria-hidden">所有價位</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_1" aria-hidden="aria-hidden">低於$500</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_2" aria-hidden="aria-hidden">$500-$1000</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_3" aria-hidden="aria-hidden">$1001-$2000</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_4" aria-hidden="aria-hidden">$2001-$3000</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 到貨時間 -->
+        <div class="select-box">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_0" value="delivery_0" name="Delivery" checked="checked"/>
+              <p class="select-box__input-text">到貨時間</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_1" value="delivery_1" name="Delivery"/>
+              <p class="select-box__input-text">雙北當日配</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_2" value="delivery_2" name="Delivery"/>
+              <p class="select-box__input-text">快速到貨</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_3" value="delivery_3" name="Delivery"/>
+              <p class="select-box__input-text">一般到貨</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_4" value="delivery_4" name="Delivery"/>
+              <p class="select-box__input-text">超值預購</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="delivery_0" aria-hidden="aria-hidden">到貨時間</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_1" aria-hidden="aria-hidden">雙北當日配<span>兩點下單今天到</span></label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_2" aria-hidden="aria-hidden">快速到貨<span>三點下單隔天到</span></label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_3" aria-hidden="aria-hidden">一般到貨<span>3-5個工作天</span></label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_4" aria-hidden="aria-hidden">超值預購</label>
+            </li>
+          </ul>
+        </div>
+        
+        <input class="__inputs_text" type="text" placeholder="請輸入關鍵字">
+        <button class="__inputs_searchByPhoto"></button>
+        <input class="__inputs_submit" type="submit" value="搜尋"> 
+      </div>
+      
+      
+    </form>
+</nav>
+<div class="overlay"></div>
+<ul class="nav__item__menu">
+  <li>
+    
+      <a class="nav__item__menuWine--active" href="index_wine.html"><span class="icon_wine"><img src="/iCheers-WebRevision/images/icon_wine-3455af5f.svg" alt=""></span>葡萄酒館</a>
+      
+      <a class="nav__item__menu_BnB" href="#">找波爾多</a>
+      <a class="nav__item__menu_BnB" href="#">找布根地</a>
+
+    
+      <a href="index_spirits.html"><span class="icon_spirits"><img src="/iCheers-WebRevision/images/icon_spirits-a8109b70.svg" alt=""></span>烈酒館</a>
+        
+
+    
+      <a href="index_beer.html"><span class="icon_beer"><img src="/iCheers-WebRevision/images/icon_beer-8a607e62.svg" alt=""></span>啤酒館</a>
+       
+
+    
+        <a href="index_sake.html"><span class="icon_sake"><img src="/iCheers-WebRevision/images/icon_sake-99da8ad0.svg" alt=""></span>清酒館</a>
+         
+  </li>
+  <li>
+    <a href="#">進階搜尋</a>
+    <a href="#">近期瀏覽</a>
+    <a href="#">沒有收到確認信?</a>
+  </li>
+  <li>
+    <a href="#"><span class="icon_account"><img src="/iCheers-WebRevision/images/icon_account-e22082ed.svg" alt=""></span>登入/加入會員</a>
+    <a href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_cwc-4bb3ff74.svg" alt=""></span>線上酒窖</a>
+  </li>
+</ul>
+    <div class="owl-carousel owl-theme B-Carousel">
+  <div class="item ">
+    <img src="/iCheers-WebRevision/images/banner_1280x576-987d01b1.jpg" class="carousel-img--desk w-100" alt="...">
+    <img src="/iCheers-WebRevision/images/banner_425x293-bc9f5b5f.jpg" class="carousel-img--mobile w-100" alt="...">
+  </div>
+  <div class="item ">
+    <img src="/iCheers-WebRevision/images/banner_1280x576-987d01b1.jpg" class="carousel-img--desk w-100" alt="...">
+    <img src="/iCheers-WebRevision/images/banner_425x293-bc9f5b5f.jpg" class="carousel-img--mobile w-100" alt="...">
+  </div>
+  <div class="item ">
+    <img src="/iCheers-WebRevision/images/banner_1280x576-987d01b1.jpg" class="carousel-img--desk w-100" alt="...">
+    <img src="/iCheers-WebRevision/images/banner_425x293-bc9f5b5f.jpg" class="carousel-img--mobile w-100" alt="...">
+  </div>
+  <div class="item ">
+    <img src="/iCheers-WebRevision/images/banner_1280x576-987d01b1.jpg" class="carousel-img--desk w-100" alt="...">
+    <img src="/iCheers-WebRevision/images/banner_425x293-bc9f5b5f.jpg" class="carousel-img--mobile w-100" alt="...">
+  </div>
+  <div class="item ">
+    <img src="/iCheers-WebRevision/images/banner_1280x576-987d01b1.jpg" class="carousel-img--desk w-100" alt="...">
+    <img src="/iCheers-WebRevision/images/banner_425x293-bc9f5b5f.jpg" class="carousel-img--mobile w-100" alt="...">
+  </div>
+  <div class="item ">
+    <img src="/iCheers-WebRevision/images/banner_1280x576-987d01b1.jpg" class="carousel-img--desk w-100" alt="...">
+    <img src="/iCheers-WebRevision/images/banner_425x293-bc9f5b5f.jpg" class="carousel-img--mobile w-100" alt="...">
+  </div>
+  <div class="item ">
+    <img src="/iCheers-WebRevision/images/banner_1280x576-987d01b1.jpg" class="carousel-img--desk w-100" alt="...">
+    <img src="/iCheers-WebRevision/images/banner_425x293-bc9f5b5f.jpg" class="carousel-img--mobile w-100" alt="...">
+  </div>
+</div>    <div class="layout__doubleColumn">
+      
+<!-- 分類找酒-綜合首頁 -->
+
+    
+
+<!-- 分類找酒-葡萄酒館 -->
+
+<section class="U-classification U-classification--wine">
+    <ul class="U-classification__sortList">
+        <li class="U-classification__sort U-classification__title">分類找酒</li>
+        <li class="U-classification__sort U-classification__sortBTN active" data-target="sortWinePopular"><span>熱門搜尋</span><span>類型</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortWineArea"><span>產區</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortWineClassification"><span>等級</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortWineComments"><span>評價</span></li>
+        <li class="U-classification__sort U-classification__sortBTN" data-target="sortWinePrice"><span>單價</span><span>年份</span></li>
+        <li class="U-classification__sort">進階搜尋</li>
+        <li class="U-classification__sort">近期瀏覽</li>
+    </ul>
+    <div class="U-classification__itemList" id="sortWinePopular">
+        <div class="U-classification__breadcrumb"><span><a href="index.html">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li class="U-classification__itemTitle">熱門搜尋</li>
+                <li><a  class="U-classification__item" href="#">頂級名酒 (4443)</a></li>
+                <li><a  class="U-classification__item" href="#">快速到貨 (6374)</a></li>
+                <li><a  class="U-classification__item" href="#">超值預訂 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">自然酒 (1026)</a></li>
+                <li><a  class="U-classification__item" href="#">橘酒 (140)</a></li>
+                <li><a  class="U-classification__item" href="#">陶甕酒 (85)</a></li>
+                <li><a  class="U-classification__item" href="#">無酒精 (8)</a></li>
+                <li class="U-classification__itemTitle">類型</li>
+                <li><a  class="U-classification__item" href="#">紅酒(7817)</a></li>
+                <li><a  class="U-classification__item" href="#">白酒(2445)</a></li>
+                <li><a  class="U-classification__item" href="#">粉紅酒(128)</a></li>
+                <li><a  class="U-classification__item" href="#">氣泡酒(724)</a></li>
+                <li><a  class="U-classification__item" href="#">加烈酒(92)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortWineArea" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col4">
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+                <li><a  class="U-classification__item" href="#">法國 (6346)</a></li>
+                <li><a  class="U-classification__item" href="#">義大利 (1782)</a></li>
+                <li><a  class="U-classification__item" href="#">美國 (636)</a></li>
+                <li><a  class="U-classification__item" href="#">西班牙 (611)</a></li>
+                <li><a  class="U-classification__item" href="#">澳洲 (457)</a></li>
+                <li><a  class="U-classification__item" href="#">智利 (281)</a></li>
+                <li><a  class="U-classification__item" href="#">德國 (199)</a></li>
+                <li><a  class="U-classification__item" href="#">紐西蘭 (160)</a></li>
+                <li><a  class="U-classification__item" href="#">阿根廷 (132)</a></li>
+                <li><a  class="U-classification__item" href="#">奧地利 (121)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortWineClassification" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li><a  class="U-classification__item" href="#">法定產區管制AC (2077)</a></li>
+                <li><a  class="U-classification__item" href="#">保證法定產區DOCG (618)</a></li>
+                <li><a  class="U-classification__item" href="#">美國葡萄酒法定產區AVA (583)</a></li>
+                <li><a  class="U-classification__item" href="#">紐澳產區分級GI (583)</a></li>
+                <li><a  class="U-classification__item" href="#">法定產區DOC (555)</a></li>
+                <li><a  class="U-classification__item" href="#">一級園 (555)</a></li>
+                <li><a  class="U-classification__item" href="#">地區餐酒IGT (454)</a></li>
+                <li><a  class="U-classification__item" href="#">法定產區DO (447)</a></li>
+                <li><a  class="U-classification__item" href="#">村莊級 (445)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克一級酒莊 (364)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克二級酒莊 (349)</a></li>
+                <li><a  class="U-classification__item" href="#">特級園 (287)</a></li>
+                <li><a  class="U-classification__item" href="#">格拉夫列級酒莊 (240)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克五級酒莊 (226)</a></li>
+                <li><a  class="U-classification__item" href="#">聖愛美濃列級酒莊 (220)</a></li>
+                <li><a  class="U-classification__item" href="#">聖愛美濃一級特等酒莊B (181)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克三級酒莊 (162)</a></li>
+                <li><a  class="U-classification__item" href="#">布根地地區級 (157)</a></li>
+                <li><a  class="U-classification__item" href="#">梅多克四級酒莊 (151)</a></li>
+                <li><a  class="U-classification__item" href="#">普級餐酒 (146)</a></li>
+                <li><a  class="U-classification__item" href="#">N/A (115)</a></li>
+                <li><a  class="U-classification__item" href="#">聖愛美濃一級特等酒莊A (114)</a></li>
+                <li><a  class="U-classification__item" href="#">保證法定產區DOCa/DOQ (109)</a></li>
+                <li><a  class="U-classification__item" href="#">聖愛美濃特等酒莊 (91)</a></li>
+                <li><a  class="U-classification__item" href="#">Quality Wine (80)</a></li>
+                <li><a  class="U-classification__item" href="#">索甸一級酒莊 (76)</a></li>
+                <li><a  class="U-classification__item" href="#">布爾喬亞級酒莊 (76)</a></li>
+                <li><a  class="U-classification__item" href="#">優質薄酒萊 (55)</a></li>
+                <li><a  class="U-classification__item" href="#">Wine of Origin (40)</a></li>
+                <li><a  class="U-classification__item" href="#">索甸優等一級酒莊 (35)</a></li>
+                <li><a  class="U-classification__item" href="#">DOP (25)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortWineComments" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li><a  class="U-classification__item" href="#">Robert Parker (3957)</a></li>
+                <li><a  class="U-classification__item" href="#">Jancis Robinson (3160)</a></li>
+                <li><a  class="U-classification__item" href="#">Wine Spectator (822)</a></li>
+                <li><a  class="U-classification__item" href="#">Wine Enthusiast (766)</a></li>
+                <li><a  class="U-classification__item" href="#">James Suckling (580)</a></li>
+                <li><a  class="U-classification__item" href="#">Burghound (465)</a></li>
+                <li><a  class="U-classification__item" href="#">Falstaff (463)</a></li>
+                <li><a  class="U-classification__item" href="#">Tim Atkin (331)</a></li>
+                <li><a  class="U-classification__item" href="#">Decanter Magazine (320)</a></li>
+                <li><a  class="U-classification__item" href="#">La Revue du Vin de France (306)</a></li>
+                <li><a  class="U-classification__item" href="#">Stephen Tanzer (252)</a></li>
+                <li><a  class="U-classification__item" href="#">2023 Buvons Nature (248)</a></li>
+                <li><a  class="U-classification__item" href="#">Jasper Morris (231)</a></li>
+                <li><a  class="U-classification__item" href="#">Buvons Nature (163)</a></li>
+                <li><a  class="U-classification__item" href="#">Vinum Magazine (154)</a></li>
+                <li><a  class="U-classification__item" href="#">Bettane & Desseauve (118)</a></li>
+                <li><a  class="U-classification__item" href="#">Guía Peñín (111)</a></li>
+                <li><a  class="U-classification__item" href="#">The Wine Front (107)</a></li>
+                <li><a  class="U-classification__item" href="#">Antonio Galloni (106)</a></li>
+                <li><a  class="U-classification__item" href="#">Jeannie Cho Lee (101)</a></li>
+                <li><a  class="U-classification__item" href="#">Le Guide Hachette des Vins (52)</a></li>
+                <li><a  class="U-classification__item" href="#">International Wine Challenge (47)</a></li>
+                <li><a  class="U-classification__item" href="#">Jeb Dunnuck (43)</a></li>
+                <li><a  class="U-classification__item" href="#">WSD Wine Awards (41)</a></li>
+                <li><a  class="U-classification__item" href="#">International Wine & Spirit Competition (33)</a></li>
+                <li><a  class="U-classification__item" href="#">Luca Maroni (27)</a></li>
+                <li><a  class="U-classification__item" href="#">James Halliday (26)</a></li>
+                <li><a  class="U-classification__item" href="#">Gilbert & Gaillard (22)</a></li>
+                <li><a  class="U-classification__item" href="#">Bob Campbell (18)</a></li>
+                <li><a  class="U-classification__item" href="#">Gambero Rosso (9)</a></li>
+                <li><a  class="U-classification__item" href="#">Jeremy Oliver (9)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="U-classification__itemList" id="sortWinePrice" style="display: none;">
+        <div class="U-classification__breadcrumb"><span><a href="#">首頁</a></span><span>葡萄酒館</span></div>
+        <div class="U-classification__itemWrap">
+            <ul class="U-classification__items U-classification__items--col2">
+                <li class="U-classification__itemTitle">單價</li>
+                <li><a  class="U-classification__item" href="#">低於 $500 (125)</a></li>
+                <li><a  class="U-classification__item" href="#">$500-1000 (1428)</a></li>
+                <li><a  class="U-classification__item" href="#">$1001-2000 (3313)</a></li>
+                <li><a  class="U-classification__item" href="#">$2001-3000 (1716)</a></li>
+                <li><a  class="U-classification__item" href="#">$3001-4000 (981)</a></li>
+                <li><a  class="U-classification__item" href="#">$4001-5000 (582)</a></li>
+                <li><a  class="U-classification__item" href="#">$5000 以上 (1606)</a></li>
+                <li class="U-classification__itemTitle">年份</li>
+                <li><a  class="U-classification__item" href="#">1920年之前 (12)</a></li>
+                <li><a  class="U-classification__item" href="#">NV(無年份) (584)</a></li>
+                <li><a  class="U-classification__item" href="#">1920-1939年 (2)</a></li>
+                <li><a  class="U-classification__item" href="#">1940-1959年 (13)</a></li>
+                <li><a  class="U-classification__item" href="#">1960-1979年 (100)</a></li>
+                <li><a  class="U-classification__item" href="#">1980-1999年 (383)</a></li>
+                <li><a  class="U-classification__item" href="#">2000-2009年 (1015)</a></li>
+                <li><a  class="U-classification__item" href="#">2010年至今 (9209)</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- 分類找酒-烈酒館 -->
+
+    
+
+<!-- 分類找酒-啤酒館 -->
+
+    
+
+<!-- 分類找酒-清酒館 -->
+
+          <section class="D-topics">
+    <h3 class="D-topics__title">主題選酒</h3>
+    
+    <div class="D-topics__items D-topics__items--wine">
+        <a href="#" class="D-topics__item"><img src="/iCheers-WebRevision/images/D_wine_1-a72e8fbd.png" alt="波爾多"></a>
+        <a href="#" class="D-topics__item"><img src="/iCheers-WebRevision/images/D_wine_2-178f8d64.png" alt="布根地"></a>
+        <a href="#" class="D-topics__item"><img src="/iCheers-WebRevision/images/D_wine_3-7dd61ef7.png" alt="香檳"></a>
+        <a href="#" class="D-topics__item"><img src="/iCheers-WebRevision/images/D_wine_4-7ee894a7.png" alt="義大利"></a>
+        <a href="#" class="D-topics__item"><img src="/iCheers-WebRevision/images/D_wine_5-b473016a.png" alt="美國膜拜酒"></a>
+        <a href="#" class="D-topics__item"><img src="/iCheers-WebRevision/images/D_wine_6-1f12e3fd.png" alt="台灣"></a>
+    </div>
+    
+</section>    </div>
+    <section class="R-keywords">
+    <h3 class="R-keywords__title">熱門關鍵字</h3>
+    <ul class="R-keywords__items">
+        <li class="R-keywords__item"><a href="#">自然酒</a></li>
+        <li class="R-keywords__item"><a href="#">橘酒</a></li>
+        <li class="R-keywords__item"><a href="#">陶甕酒</a></li>
+        <li class="R-keywords__item"><a href="#">膜拜酒</a></li>
+        <li class="R-keywords__item"><a href="#">超級托斯卡尼</a></li>
+        <li class="R-keywords__item"><a href="#">香檳</a></li>
+        <li class="R-keywords__item"><a href="#">合作社</a></li>
+        <li class="R-keywords__item"><a href="#">小農香檳</a></li>
+        <li class="R-keywords__item"><a href="#">禮盒</a></li>
+        <li class="R-keywords__item"><a href="#">RP 100</a></li>
+        <li class="R-keywords__item"><a href="#">智利酒王</a></li>
+        <li class="R-keywords__item"><a href="#">Opus One</a></li>
+        <li class="R-keywords__item"><a href="#">總統用酒</a></li>
+        <li class="R-keywords__item"><a href="#">美國酒王</a></li>
+        <li class="R-keywords__item"><a href="#">稀世珍釀</a></li>
+        <li class="R-keywords__item"><a href="#">滿分酒</a></li>
+        <li class="R-keywords__item"><a href="#">傳統法</a></li>
+        <li class="R-keywords__item"><a href="#">林裕森</a></li>
+    </ul>
+</section>    <section class="K-limitedtimeOffer">
+    <h3 class="K-limitedtimeOffer__title">限時下殺
+        <div class="K-limitedtimeOffer__timer">倒數
+            <div class="K-limitedtimeOffer__timer__days"><span>0</span><span>0</span></div>:
+            <div class="K-limitedtimeOffer__timer__hours"><span>0</span><span>0</span></div>:
+            <div class="K-limitedtimeOffer__timer__minutes"><span>0</span><span>0</span></div>:
+            <div class="K-limitedtimeOffer__timer__seconds"><span>0</span><span>0</span></div>
+        </div>
+    </h3>
+    <div class="owl-carousel owl-theme K-limitedtimeOffer__items">
+        <div class="item">
+            <div class="K-limitedtimeOffer__item">
+                <h4 class="K-limitedtimeOffer__name"><a href="#">正面對決！挑戰最低 ALMAVIVA</a></h4>
+                <table class="K-limitedtimeOffer__price">
+                    <tr>
+                        <td></td>
+                        <td><span class="K-limitedtimeOffer__price--original">5800</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="K-limitedtimeOffer__price--discount"></span></td>
+                        <td><span class="K-limitedtimeOffer__price--sale --fast">5400</span>&frasl;瓶</td>
+                        <td><button class="deliveryBTN--fast"></button></td>
+                    </tr>
+                </table>
+                <div class="K-limitedtimeOffer__pic"><a href="#"><img class="K-limitedtimeOffer__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA"></a></div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="K-limitedtimeOffer__item">
+                <h4 class="K-limitedtimeOffer__name"><a href="#">正面對決！挑戰最低 ALMAVIVA正面對決！挑戰最低 ALMAVIVA正面對決！挑戰最低 ALMAVIVA</a></h4>
+                <table class="K-limitedtimeOffer__price">
+                    <tr>
+                        <td></td>
+                        <td><span class="K-limitedtimeOffer__price--original">5800</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="K-limitedtimeOffer__price--discount">85折</span></td>
+                        <td><span class="K-limitedtimeOffer__price--sale --normal">5400</span>&frasl;瓶</td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="K-limitedtimeOffer__pic"><a href="#"><img class="K-limitedtimeOffer__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA"></a></div>
+                <button class="favoriteBTN active"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="K-limitedtimeOffer__item">
+                <h4 class="K-limitedtimeOffer__name"><a href="#">正面對決！挑戰最低 ALMAVIVA</a></h4>
+                <table class="K-limitedtimeOffer__price">
+                    <tr>
+                        <td></td>
+                        <td><span class="K-limitedtimeOffer__price--original">5800</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="K-limitedtimeOffer__price--discount">85折</span></td>
+                        <td><span class="K-limitedtimeOffer__price--sale --preorder">5400</span>&frasl;組</td>
+                        <td><button class="deliveryBTN--preorder"></button></td>
+                    </tr>
+                </table>
+                <div class="K-limitedtimeOffer__pic"><a href="#"><img class="K-limitedtimeOffer__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA"></a></div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+    </div>
+</section>    <section class="T-setPrice">
+    <h3 class="T-setPrice__title">成箱優惠</h3>
+    <div class="owl-carousel owl-theme T-setPrice__items">
+        <div class="item">
+            <div class="T-setPrice__item">
+                <h4 class="T-setPrice__name">
+                    <a href="#">
+                       <span class="T-setPrice__name--en">Dom. René Leclerc</span>
+                       <span class="T-setPrice__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="T-setPrice__info">
+                    <span class="T-setPrice__info__year">2018</span>
+                    <span class="T-setPrice__info__capacity">750ml</span>
+                    <span class="T-setPrice__info__awards">RP 93</span>
+                </div>
+                <table class="T-setPrice__price">
+                    <tr>
+                        <td></td>
+                        <td><span class="T-setPrice__price--original">11300</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="T-setPrice__price--discount"></span></td>
+                        <td><span class="T-setPrice__price--sale --normal">9605</span>&frasl;瓶</td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="T-setPrice__pic">
+                    <a href="#">
+                        <div class="T-setPrice__pic__wrap"><img class="T-setPrice__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA"></div>
+                        <span class="T-setPrice__pic__x">x</span>
+                        <span class="T-setPrice__pic__quantity">24</span>
+                    </a>
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="T-setPrice__item">
+                <h4 class="T-setPrice__name">
+                    <a href="#">
+                       <span class="T-setPrice__name--en">Dom. René Leclerc</span>
+                       <span class="T-setPrice__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="T-setPrice__info">
+                    <span class="T-setPrice__info__year">2018</span>
+                    <span class="T-setPrice__info__capacity">750ml</span>
+                </div>
+                <table class="T-setPrice__price">
+                    <tr>
+                        <td></td>
+                        <td><span class="T-setPrice__price--original">5800</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="T-setPrice__price--discount"></span></td>
+                        <td><span class="T-setPrice__price--sale --preorder">5400</span>&frasl;瓶</td>
+                        <td><button class="deliveryBTN--preorder"></button></td>
+                    </tr>
+                </table>
+                <div class="T-setPrice__pic">
+                    <a href="#">
+                        <div class="T-setPrice__pic__wrap"><img class="T-setPrice__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA"></div>
+                        <span class="T-setPrice__pic__x">x</span>
+                        <span class="T-setPrice__pic__quantity">12</span>
+                    </a>
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="T-setPrice__item">
+                <h4 class="T-setPrice__name">
+                    <a href="#">
+                       <span class="T-setPrice__name--en">Dom. René Leclerc</span>
+                       <span class="T-setPrice__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="T-setPrice__info">
+                    <span class="T-setPrice__info__year">2018</span>
+                    <span class="T-setPrice__info__capacity">750ml</span>
+                </div>
+                <table class="T-setPrice__price">
+                    <tr>
+                        <td></td>
+                        <td><span class="T-setPrice__price--original">5800</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="T-setPrice__price--discount">85折</span></td>
+                        <td><span class="T-setPrice__price--sale --fast">5400</span>&frasl;瓶</td>
+                        <td><button class="deliveryBTN--fast"></button></td>
+                    </tr>
+                </table>
+                <div class="T-setPrice__pic">
+                    <a href="#">
+                        <div class="T-setPrice__pic__wrap"><img class="T-setPrice__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA"></div>
+                        <span class="T-setPrice__pic__x">x</span>
+                        <span class="T-setPrice__pic__quantity">6</span>
+                    </a>
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+       
+        
+    </div>
+</section>    <section class="L-itemsRanking">
+    <h3 class="L-itemsRanking__title">大家都在買</h3>
+    <div class="owl-carousel owl-theme L-itemsRanking__items">
+        <div class="item">
+            <div class="L-itemsRanking__item">
+                <h4 class="L-itemsRanking__name">
+                    <a href="#">
+                       <span class="L-itemsRanking__name--en">Dom. René Leclerc</span>
+                       <span class="L-itemsRanking__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="L-itemsRanking__info">
+                    <span class="L-itemsRanking__info__year">2018</span>
+                    <span class="L-itemsRanking__info__capacity">750ml</span>
+                    <span class="L-itemsRanking__info__awards">RP 93</span>
+                </div>
+                <table class="L-itemsRanking__price">
+                    <tr>
+                        <td><span class="L-itemsRanking__price--discount"></span></td>
+                        <td><span class="L-itemsRanking__price--sale --normal">9605</span></td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="L-itemsRanking__Ranking"><span>1</span></div>
+                <div class="L-itemsRanking__pic">
+                    <a href="#">
+                        <div class="L-itemsRanking__pic__wrap">
+                            <img class="L-itemsRanking__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="L-itemsRanking__item">
+                <h4 class="L-itemsRanking__name">
+                    <a href="#">
+                       <span class="L-itemsRanking__name--en">Dom. René Leclerc</span>
+                       <span class="L-itemsRanking__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="L-itemsRanking__info">
+                    <span class="L-itemsRanking__info__year">2018</span>
+                    <span class="L-itemsRanking__info__capacity">750ml</span>
+                    <span class="L-itemsRanking__info__awards">RP 93</span>
+                </div>
+                <table class="L-itemsRanking__price">
+                    <tr>
+                        <td><span class="L-itemsRanking__price--discount"></span></td>
+                        <td><span class="L-itemsRanking__price--sale --normal">9605</span></td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="L-itemsRanking__Ranking"><span>2</span></div>
+                <div class="L-itemsRanking__pic">
+                    <a href="#">
+                        <div class="L-itemsRanking__pic__wrap">
+                            <img class="L-itemsRanking__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="L-itemsRanking__item">
+                <h4 class="L-itemsRanking__name">
+                    <a href="#">
+                       <span class="L-itemsRanking__name--en">Dom. René Leclerc</span>
+                       <span class="L-itemsRanking__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="L-itemsRanking__info">
+                    <span class="L-itemsRanking__info__year">2018</span>
+                    <span class="L-itemsRanking__info__capacity">750ml</span>
+                    <span class="L-itemsRanking__info__awards">RP 93</span>
+                </div>
+                <table class="L-itemsRanking__price">
+                    <tr>
+                        <td><span class="L-itemsRanking__price--discount"></span></td>
+                        <td><span class="L-itemsRanking__price--sale --normal">9605</span></td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="L-itemsRanking__pic">
+                    <a href="#">
+                        <div class="L-itemsRanking__pic__wrap">
+                            <img class="L-itemsRanking__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    <div class="L-itemsRanking__Ranking"><span>3</span></div>
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="L-itemsRanking__item">
+                <h4 class="L-itemsRanking__name">
+                    <a href="#">
+                       <span class="L-itemsRanking__name--en">Dom. René Leclerc</span>
+                       <span class="L-itemsRanking__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="L-itemsRanking__info">
+                    <span class="L-itemsRanking__info__year">2018</span>
+                    <span class="L-itemsRanking__info__capacity">750ml</span>
+                    <span class="L-itemsRanking__info__awards">RP 93</span>
+                </div>
+                <table class="L-itemsRanking__price">
+                    <tr>
+                        <td><span class="L-itemsRanking__price--discount"></span></td>
+                        <td><span class="L-itemsRanking__price--sale --normal">9605</span></td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="L-itemsRanking__pic">
+                    <a href="#">
+                        <div class="L-itemsRanking__pic__wrap">
+                            <img class="L-itemsRanking__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    <div class="L-itemsRanking__Ranking"><span>4</span></div>
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="L-itemsRanking__item">
+                <h4 class="L-itemsRanking__name">
+                    <a href="#">
+                       <span class="L-itemsRanking__name--en">Dom. René Leclerc</span>
+                       <span class="L-itemsRanking__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="L-itemsRanking__info">
+                    <span class="L-itemsRanking__info__year">2018</span>
+                    <span class="L-itemsRanking__info__capacity">750ml</span>
+                    <span class="L-itemsRanking__info__awards">RP 93</span>
+                </div>
+                <table class="L-itemsRanking__price">
+                    <tr>
+                        <td><span class="L-itemsRanking__price--discount"></span></td>
+                        <td><span class="L-itemsRanking__price--sale --normal">9605</span></td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="L-itemsRanking__pic">
+                    <a href="#">
+                        <div class="L-itemsRanking__pic__wrap">
+                            <img class="L-itemsRanking__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    <div class="L-itemsRanking__Ranking"><span>5</span></div>
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+    </div>
+</section>    <section class="M-itemList">
+    <h3 class="M-itemList__title">最新降價</h3>
+    <div class="owl-carousel owl-theme M-itemList__items">
+        <div class="item">
+            <div class="M-itemList__item">
+                <h4 class="M-itemList__name">
+                    <a href="#">
+                       <span class="M-itemList__name--en">Dom. René Leclerc</span>
+                       <span class="M-itemList__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="M-itemList__info">
+                    <span class="M-itemList__info__year">2018</span>
+                    <span class="M-itemList__info__capacity">750ml</span>
+                    <span class="M-itemList__info__awards">RP 93</span>
+                </div>
+                <table class="M-itemList__price">
+                    <tr>
+                        <td><span class="M-itemList__price--discount"></span></td>
+                        <td><span class="M-itemList__price--sale --normal">9605</span></td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="M-itemList__pic">
+                    <a href="#">
+                        <div class="M-itemList__pic__wrap">
+                            <img class="M-itemList__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="M-itemList__item">
+                <h4 class="M-itemList__name">
+                    <a href="#">
+                       <span class="M-itemList__name--en">Dom. René Leclerc</span>
+                       <span class="M-itemList__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="M-itemList__info">
+                    <span class="M-itemList__info__year">2018</span>
+                    <span class="M-itemList__info__capacity">750ml</span>
+                    <span class="M-itemList__info__awards">RP 93</span>
+                </div>
+                <table class="M-itemList__price">
+                    <tr>
+                        <td><span class="M-itemList__price--discount"></span></td>
+                        <td><span class="M-itemList__price--sale --normal">9605</span></td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="M-itemList__pic">
+                    <a href="#">
+                        <div class="M-itemList__pic__wrap">
+                            <img class="M-itemList__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="M-itemList__item">
+                <h4 class="M-itemList__name">
+                    <a href="#">
+                       <span class="M-itemList__name--en">Dom. René Leclerc</span>
+                       <span class="M-itemList__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="M-itemList__info">
+                    <span class="M-itemList__info__year">2018</span>
+                    <span class="M-itemList__info__capacity">750ml</span>
+                    <span class="M-itemList__info__awards">RP 93</span>
+                </div>
+                <table class="M-itemList__price">
+                    <tr>
+                        <td><span class="M-itemList__price--discount"></span></td>
+                        <td><span class="M-itemList__price--sale --fast">9605</span></td>
+                        <td><button class="deliveryBTN--fast"></button></td>
+                    </tr>
+                </table>
+                <div class="M-itemList__pic">
+                    <a href="#">
+                        <div class="M-itemList__pic__wrap">
+                            <img class="M-itemList__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="M-itemList__item">
+                <h4 class="M-itemList__name">
+                    <a href="#">
+                       <span class="M-itemList__name--en">Dom. René Leclerc</span>
+                       <span class="M-itemList__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="M-itemList__info">
+                    <span class="M-itemList__info__year">2018</span>
+                    <span class="M-itemList__info__capacity">750ml</span>
+                    <span class="M-itemList__info__awards">RP 93</span>
+                </div>
+                <table class="M-itemList__price">
+                    <tr>
+                        <td><span class="M-itemList__price--discount"></span></td>
+                        <td><span class="M-itemList__price--sale --normal">9605</span></td>
+                        <td><button class="deliveryBTN--normal"></button></td>
+                    </tr>
+                </table>
+                <div class="M-itemList__pic">
+                    <a href="#">
+                        <div class="M-itemList__pic__wrap">
+                            <img class="M-itemList__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="M-itemList__item">
+                <h4 class="M-itemList__name">
+                    <a href="#">
+                       <span class="M-itemList__name--en">Dom. René Leclerc</span>
+                       <span class="M-itemList__name--cn">雷內．勒克拉克 哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                    </a>
+                </h4>
+                <div class="M-itemList__info">
+                    <span class="M-itemList__info__year">2018</span>
+                    <span class="M-itemList__info__capacity">750ml</span>
+                    <span class="M-itemList__info__awards">RP 93</span>
+                </div>
+                <table class="M-itemList__price">
+                    <tr>
+                        <td><span class="M-itemList__price--discount"></span></td>
+                        <td><span class="M-itemList__price--sale --fast">9605</span></td>
+                        <td><button class="deliveryBTN--fast"></button></td>
+                    </tr>
+                </table>
+                <div class="M-itemList__pic">
+                    <a href="#">
+                        <div class="M-itemList__pic__wrap">
+                            <img class="M-itemList__pic__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="ALMAVIVA">
+                        </div>
+                    </a>
+                    
+                </div>
+                <button class="favoriteBTN"><span></span></button>
+            </div>
+        </div>
+        
+    </div>
+</section>    <section class="N-freeGift">
+    <h3 class="N-freeGift__title">最新贈品活動</h3>
+    <div class="owl-carousel owl-theme N-freeGift__items">
+        <div class="item">
+            <div class="N-freeGift__item">
+                <h4 class="N-freeGift__name">
+                    <a href="#">智利十大卡本內 買就送總價水晶雙杯</a>
+                </h4>
+                <div class="N-freeGift__price">市值 <span>1000</span></div>
+                <div class="N-freeGift__pic">
+                    <a href="#">
+                        <div class="N-freeGift__pic__wrap">
+                            <img class="N-freeGift__pic__img" src="/iCheers-WebRevision/images/gift_1-5e56aa93.png" alt="水晶雙杯組">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="N-freeGift__item">
+                <h4 class="N-freeGift__name">
+                    <a href="#">智利十大卡本內 買就送總價水晶雙杯</a>
+                </h4>
+                <div class="N-freeGift__price">市值 <span>1000</span></div>
+                <div class="N-freeGift__pic">
+                    <a href="#">
+                        <div class="N-freeGift__pic__wrap">
+                            <img class="N-freeGift__pic__img" src="/iCheers-WebRevision/images/gift_2-afd4786f.png" alt="水晶雙杯組">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="N-freeGift__item">
+                <h4 class="N-freeGift__name">
+                    <a href="#">智利十大卡本內 買就送總價水晶雙杯</a>
+                </h4>
+                <div class="N-freeGift__price">市值 <span>1000</span></div>
+                <div class="N-freeGift__pic">
+                    <a href="#">
+                        <div class="N-freeGift__pic__wrap">
+                            <img class="N-freeGift__pic__img" src="/iCheers-WebRevision/images/gift_3-7cb48a43.png" alt="水晶雙杯組">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="N-freeGift__item">
+                <h4 class="N-freeGift__name">
+                    <a href="#">智利十大卡本內 買就送總價水晶雙杯</a>
+                </h4>
+                <div class="N-freeGift__price">市值 <span>1000</span></div>
+                <div class="N-freeGift__pic">
+                    <a href="#">
+                        <div class="N-freeGift__pic__wrap">
+                            <img class="N-freeGift__pic__img" src="/iCheers-WebRevision/images/gift_4-fee72438.png" alt="水晶雙杯組">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="N-freeGift__item">
+                <h4 class="N-freeGift__name">
+                    <a href="#">智利十大卡本內 買就送總價水晶雙杯</a>
+                </h4>
+                <div class="N-freeGift__price">市值<span>1000</span></div>
+                <div class="N-freeGift__pic">
+                    <a href="#">
+                        <div class="N-freeGift__pic__wrap">
+                            <img class="N-freeGift__pic__img" src="/iCheers-WebRevision/images/gift_5-e4bc5ba0.png" alt="水晶雙杯組">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>    <section class="S_brands">
+    <h3 class="S_brands__title">曾選購的酒莊</h3>
+    <div class="owl-carousel owl-theme S_brands__items">
+        <div class="item">
+            <a class="S_brands__item" href="#">
+                <h4 class="S_brands__name">
+                    <span class="S_brands__name--en">Champagne Tendil & Lombardi</span>
+                    <span class="S_brands__name--cn">潭龍香檳</span>
+                </h4>
+                <p class="S_brands__intro">
+                    <span class="S_brands__intro--content">羅蘭．潭迪爾 (Laurent Tendil) 與史黛分．龍巴蒂 (Stéphane Lombardi) 是兩位出身里昂 (Lyon) 的雅痞企業家，自童年起即是摯友，長大後事業各自有成， 但沒從沒忘記共同的理想－合夥創立屬於自己的香檳 (Champagne) 品牌。 兩人在香檳區裡奔走多年，終於在2007年找到合作的葡萄園與釀酒設備，推出異軍突起的香檳新星－潭龍香檳 (Champagne Tendil & Lombardi)， 初試啼聲即大放異彩。</span>
+                    <span class="S_brands__intro--more">more</span>
+                </p>
+                <div class="S_brands__bgpic"><img class="S_brands__img" src="/iCheers-WebRevision/images/winery_caymus-a4b439bf.png" alt="caymus"></div>
+                <div class="S_brands__pic"><img class="S_brands__img" src="/iCheers-WebRevision/images/logo_caymus-2b581b97.jpg" alt="caymus"></div>
+            </a>
+        </div>
+        <div class="item">
+            <a class="S_brands__item" href="#">
+                <h4 class="S_brands__name">
+                    <span class="S_brands__name--en">Champagne Tendil & Lombardi</span>
+                    <span class="S_brands__name--cn">潭龍香檳</span>
+                </h4>
+                <p class="S_brands__intro">
+                    <span class="S_brands__intro--content">羅蘭．潭迪爾 (Laurent Tendil) 與史黛分．龍巴蒂 (Stéphane Lombardi) 是兩位出身里昂 (Lyon) 的雅痞企業家，自童年起即是摯友，長大後事業各自有成， 但沒從沒忘記共同的理想－合夥創立屬於自己的香檳 (Champagne) 品牌。 兩人在香檳區裡奔走多年，終於在2007年找到合作的葡萄園與釀酒設備，推出異軍突起的香檳新星－潭龍香檳 (Champagne Tendil & Lombardi)， 初試啼聲即大放異彩。</span>
+                    <span class="S_brands__intro--more">more</span>
+                </p>
+                <div class="S_brands__bgpic"><img class="S_brands__img" src="/iCheers-WebRevision/images/winery_caymus-a4b439bf.png" alt="caymus"></div>
+                <div class="S_brands__pic"><img class="S_brands__img" src="/iCheers-WebRevision/images/logo_caymus-2b581b97.jpg" alt="caymus"></div>
+            </a>
+        </div>
+        <div class="item">
+            <a class="S_brands__item" href="#">
+                <h4 class="S_brands__name">
+                    <span class="S_brands__name--en">Champagne Tendil & Lombardi</span>
+                    <span class="S_brands__name--cn">潭龍香檳</span>
+                </h4>
+                <p class="S_brands__intro">
+                    <span class="S_brands__intro--content">羅蘭．潭迪爾 (Laurent Tendil) 與史黛分．龍巴蒂 (Stéphane Lombardi) 是兩位出身里昂 (Lyon) 的雅痞企業家，自童年起即是摯友，長大後事業各自有成， 但沒從沒忘記共同的理想－合夥創立屬於自己的香檳 (Champagne) 品牌。 兩人在香檳區裡奔走多年，終於在2007年找到合作的葡萄園與釀酒設備，推出異軍突起的香檳新星－潭龍香檳 (Champagne Tendil & Lombardi)， 初試啼聲即大放異彩。</span>
+                    <span class="S_brands__intro--more">more</span>
+                </p>
+                <div class="S_brands__bgpic"><img class="S_brands__img" src="/iCheers-WebRevision/images/winery_caymus-a4b439bf.png" alt="caymus"></div>
+                <div class="S_brands__pic"><img class="S_brands__img" src="/iCheers-WebRevision/images/logo_caymus-2b581b97.jpg" alt="caymus"></div>
+            </a>
+        </div>
+        <div class="item">
+            <a class="S_brands__item" href="#">
+                <h4 class="S_brands__name">
+                    <span class="S_brands__name--en">Champagne Tendil & Lombardi</span>
+                    <span class="S_brands__name--cn">潭龍香檳</span>
+                </h4>
+                <p class="S_brands__intro">
+                    <span class="S_brands__intro--content">羅蘭．潭迪爾 (Laurent Tendil) 與史黛分．龍巴蒂 (Stéphane Lombardi) 是兩位出身里昂 (Lyon) 的雅痞企業家，自童年起即是摯友，長大後事業各自有成， 但沒從沒忘記共同的理想－合夥創立屬於自己的香檳 (Champagne) 品牌。 兩人在香檳區裡奔走多年，終於在2007年找到合作的葡萄園與釀酒設備，推出異軍突起的香檳新星－潭龍香檳 (Champagne Tendil & Lombardi)， 初試啼聲即大放異彩。</span>
+                    <span class="S_brands__intro--more">more</span>
+                </p>
+                <div class="S_brands__bgpic"><img class="S_brands__img" src="/iCheers-WebRevision/images/winery_caymus-a4b439bf.png" alt="caymus"></div>
+                <div class="S_brands__pic"><img class="S_brands__img" src="/iCheers-WebRevision/images/logo_caymus-2b581b97.jpg" alt="caymus"></div>
+            </a>
+        </div>
+        
+    </div>
+</section>    <section class="O-articles-activity">
+    <h3 class="O-articles-activity__title">編寫<span>編</span>喝</h3>
+    <div class="owl-carousel owl-theme O-articles-activity__items">
+        <div class="item">
+            <a class="O-articles-activity__item" href="#">
+                <h4 class="O-articles-activity__caption">獅鳩與獵鷹的飛翔風味</h4>
+                <p class="O-articles-activity__intro">
+                    <span class="O-articles-activity__intro--content">五月初旬，iCheers有幸受到義大利酒專業代理商邀請，參與鷹鳩酒莊（Grifalco Vini）莊主 - 羅倫佐．皮辛（Lorenzo Piccin）訪台品飲會。帥氣的羅倫佐身著一襲灰色休閒西裝，可愛地體驗台北捷運至品飲會場。適逢立夏剛過、逐漸步入梅雨季，外頭迷濛細雨與略悶濕的天氣，莊主想必感受到台灣典型的夏日。</span>
+                    <span class="O-articles-activity__intro--more">more</span>
+                </p>
+                <div class="O-articles-activity__pic"><img class="O-articles-activity__img" src="/iCheers-WebRevision/images/illu_wine_1-2cc0a847.svg" alt="caymus"></div>
+            </a>
+        </div>
+        <div class="item">
+            <a class="O-articles-activity__item" href="#">
+                <h4 class="O-articles-activity__caption">獅鳩與獵鷹的飛翔風味</h4>
+                <p class="O-articles-activity__intro">
+                    <span class="O-articles-activity__intro--content">五月初旬，iCheers有幸受到義大利酒專業代理商邀請，參與鷹鳩酒莊（Grifalco Vini）莊主 - 羅倫佐．皮辛（Lorenzo Piccin）訪台品飲會。帥氣的羅倫佐身著一襲灰色休閒西裝，可愛地體驗台北捷運至品飲會場。適逢立夏剛過、逐漸步入梅雨季，外頭迷濛細雨與略悶濕的天氣，莊主想必感受到台灣典型的夏日。</span>
+                    <span class="O-articles-activity__intro--more">more</span>
+                </p>
+                <div class="O-articles-activity__pic"><img class="O-articles-activity__img" src="/iCheers-WebRevision/images/illu_wine_2-b5eca139.svg" alt="caymus"></div>
+            </a>
+        </div>
+        <div class="item">
+            <a class="O-articles-activity__item" href="#">
+                <h4 class="O-articles-activity__caption">獅鳩與獵鷹的飛翔風味</h4>
+                <p class="O-articles-activity__intro">
+                    <span class="O-articles-activity__intro--content">五月初旬，iCheers有幸受到義大利酒專業代理商邀請，參與鷹鳩酒莊（Grifalco Vini）莊主 - 羅倫佐．皮辛（Lorenzo Piccin）訪台品飲會。帥氣的羅倫佐身著一襲灰色休閒西裝，可愛地體驗台北捷運至品飲會場。適逢立夏剛過、逐漸步入梅雨季，外頭迷濛細雨與略悶濕的天氣，莊主想必感受到台灣典型的夏日。</span>
+                    <span class="O-articles-activity__intro--more">more</span>
+                </p>
+                <div class="O-articles-activity__pic"><img class="O-articles-activity__img" src="/iCheers-WebRevision/images/illu_wine_3-e8835702.svg" alt="caymus"></div>
+            </a>
+        </div>
+        
+    </div>
+</section>    <section class="Q-articles-items">
+    <h3 class="Q-articles-items__title">熱門文章</h3>
+    <div class="owl-carousel owl-theme Q-articles-items__articles">
+        <div class="item">
+            <div class="Q-articles-items__article">
+                <div class="Q-articles-items__topic">
+                    <span>01</span>&frasl;<span>酒莊好文</span>
+                </div>
+                <h4 class="Q-articles-items__caption">
+                    <span class="Q-articles-items__caption--main">可酌飲的澄陽</span>
+                    <span class="Q-articles-items__caption--minor">Château d'Yquem 伊更堡</span>  
+                </h4>
+                <div class="Q-articles-items__pic">
+                    <div class="Q-articles-items__pic__wrap"><img class="Q-articles-items__pic__img" src="/iCheers-WebRevision/images/article_dYquem_1-d432f686.png" alt="caymus"></div>
+                    <div class="Q-articles-items__pic__wrap"><img class="Q-articles-items__pic__img" src="/iCheers-WebRevision/images/article_dYquem_2-90e58f9b.png" alt="caymus"></div>
+                </div>
+                <p class="Q-articles-items__intro">
+                    <span class="Q-articles-items__intro--paragraph">甜酒釀法多樣，其中貴腐霉甜酒最為識飲者稱道。這領域裡有兩雄稱霸天，一是德國伊貢‧米勒 (Egon Müller) 酒莊的 TBA 等級貴腐酒，另一聲名愈加盈耳的王者是法國波爾多索甸次產區的伊更堡(Château d’Yquem)。 在索甸與巴薩克產區裡，伊更是唯一被列為優等一級(Premier Cru Supérieur)者，傲視其他一、二級酒莊，成為法國最具代表性的甜酒之王。</span>
+                    <span class="Q-articles-items__intro--paragraph --more">從伊更王的青年到風霜日暮，各有攝人氣象，其壯年風華是伊更較為人熟知的風貌。熟美的伊肯堡，酒色金黃光暈澄透而耀眼；入喉圓滑脂美，溫潤有骨，型態清晰明確，適切的酸將其精雕成玉樹臨風，有肌理，身段實。風格雄渾、暗含勁道卻不魯莽；口啖蜜香、洋槐、桃、梨，直到遇見安達魯西亞的橙樹花開，均泊泊泌流，香料沁入味蕾底處。尾聲，樂音和諧傳唱，悠揚和緩，遠處，光曦微亮，你又看到柳暗花明，又一轉韻。</span>
+                    <span class="Q-articles-items__intro--flip">
+                        <span class="readmore"></span>
+                        <span class="readless" style="display: none;"></span>
+                    </span>
+                </p>
+                
+                <div class="owl-carousel owl-theme Q-articles-items__items">
+                    <div class="item">
+                        <div class="Q-articles-items__item">
+                            <div class="Q-articles-items__item__info">
+                                <h5 class="Q-articles-items__item__name">
+                                    <span class="Q-articles-items__item__name--en">Dom. René Leclerc</span>
+                                    <span class="Q-articles-items__item__name--cn">哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                                </h5>
+                                <div class="Q-articles-items__item__price">最低<span>4870</span><a href="#">查看酒款</a></div>
+                                <button class="favoriteBTN"><span></span></button>
+                            </div>
+                            <div class="Q-articles-items__item__picwrap"><img class="Q-articles-items__item__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="哲維瑞香貝丹「修士背斜谷」一級園紅酒"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Q-articles-items__item">
+                            <div class="Q-articles-items__item__info">
+                                <h5 class="Q-articles-items__item__name">
+                                    <span class="Q-articles-items__item__name--en">Dom. René Leclerc</span>
+                                    <span class="Q-articles-items__item__name--cn">哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                                </h5>
+                                <div class="Q-articles-items__item__price">最低<span>4870</span><a href="#">查看酒款</a></div>
+                                <button class="favoriteBTN"><span></span></button>
+                            </div>
+                            <div class="Q-articles-items__item__picwrap"><img class="Q-articles-items__item__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="哲維瑞香貝丹「修士背斜谷」一級園紅酒"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="Q-articles-items__article">
+                <div class="Q-articles-items__topic">
+                    <span>02</span>&frasl;<span>酒莊好文</span>
+                </div>
+                <h4 class="Q-articles-items__caption">
+                    <span class="Q-articles-items__caption--main">可酌飲的澄陽</span>
+                    <span class="Q-articles-items__caption--minor">Château d'Yquem 伊更堡</span>  
+                </h4>
+                <div class="Q-articles-items__pic">
+                    <div class="Q-articles-items__pic__wrap"><img class="Q-articles-items__pic__img" src="/iCheers-WebRevision/images/article_dYquem_1-d432f686.png" alt="caymus"></div>
+                    <div class="Q-articles-items__pic__wrap"><img class="Q-articles-items__pic__img" src="/iCheers-WebRevision/images/article_dYquem_2-90e58f9b.png" alt="caymus"></div>
+                </div>
+                <p class="Q-articles-items__intro">
+                    <span class="Q-articles-items__intro--paragraph">甜酒釀法多樣，其中貴腐霉甜酒最為識飲者稱道。這領域裡有兩雄稱霸天，一是德國伊貢‧米勒 (Egon Müller) 酒莊的 TBA 等級貴腐酒，另一聲名愈加盈耳的王者是法國波爾多索甸次產區的伊更堡(Château d’Yquem)。 在索甸與巴薩克產區裡，伊更是唯一被列為優等一級(Premier Cru Supérieur)者，傲視其他一、二級酒莊，成為法國最具代表性的甜酒之王。</span>
+                    <span class="Q-articles-items__intro--paragraph --more">從伊更王的青年到風霜日暮，各有攝人氣象，其壯年風華是伊更較為人熟知的風貌。熟美的伊肯堡，酒色金黃光暈澄透而耀眼；入喉圓滑脂美，溫潤有骨，型態清晰明確，適切的酸將其精雕成玉樹臨風，有肌理，身段實。風格雄渾、暗含勁道卻不魯莽；口啖蜜香、洋槐、桃、梨，直到遇見安達魯西亞的橙樹花開，均泊泊泌流，香料沁入味蕾底處。尾聲，樂音和諧傳唱，悠揚和緩，遠處，光曦微亮，你又看到柳暗花明，又一轉韻。</span>
+                    <span class="Q-articles-items__intro--flip">
+                        <span class="readmore"></span>
+                        <span class="readless" style="display: none;"></span>
+                    </span>
+                </p>
+                
+                <div class="owl-carousel owl-theme Q-articles-items__items">
+                    <div class="item">
+                        <div class="Q-articles-items__item">
+                            <div class="Q-articles-items__item__info">
+                                <h5 class="Q-articles-items__item__name">
+                                    <span class="Q-articles-items__item__name--en">Dom. René Leclerc</span>
+                                    <span class="Q-articles-items__item__name--cn">哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                                </h5>
+                                <div class="Q-articles-items__item__price">最低<span>4870</span><a href="#">查看酒款</a></div>
+                                <button class="favoriteBTN"><span></span></button>
+                            </div>
+                            <div class="Q-articles-items__item__picwrap"><img class="Q-articles-items__item__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="哲維瑞香貝丹「修士背斜谷」一級園紅酒"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Q-articles-items__item">
+                            <div class="Q-articles-items__item__info">
+                                <h5 class="Q-articles-items__item__name">
+                                    <span class="Q-articles-items__item__name--en">Dom. René Leclerc</span>
+                                    <span class="Q-articles-items__item__name--cn">哲維瑞香貝丹「修士背斜谷」一級園紅酒</span>
+                                </h5>
+                                <div class="Q-articles-items__item__price">最低<span>4870</span><a href="#">查看酒款</a></div>
+                                <button class="favoriteBTN"><span></span></button>
+                            </div>
+                            <div class="Q-articles-items__item__picwrap"><img class="Q-articles-items__item__img" src="/iCheers-WebRevision/images/WI00261001_btl-1e8103c4.png" alt="哲維瑞香貝丹「修士背斜谷」一級園紅酒"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>    <!-- banner 五個以上 -->
+<section class="G-banners">
+    <p class="G-banners__title">您曾選購<a href="#">膜拜酒</a>類型，推薦您以下活動</p>
+    <div class="owl-carousel owl-theme G-banners__items G-banners__morethan5">
+        <div class="item">
+          <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_01-bf8efa10.jpg" alt="..."></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_02-488aa519.jpg" alt="..."></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_03-6d415834.jpg" alt="..."></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_04-a885b36b.jpg" alt="..."></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_05-35f390f7.jpg" alt="..."></a>
+        </div>
+    </div>
+</section>
+<!-- banner 四個 -->
+<section class="G-banners">
+    <p class="G-banners__title">您曾選購<a href="#">膜拜酒</a>類型，推薦您以下活動</p>
+    <div class="owl-carousel owl-theme G-banners__items G-banners__banners4">
+        <div class="item">
+          <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_01-bf8efa10.jpg" alt="..."></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_02-488aa519.jpg" alt="..."></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_03-6d415834.jpg" alt="..."></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_04-a885b36b.jpg" alt="..."></a>
+        </div>
+    </div>
+</section>
+<!-- banner 三個 -->
+<section class="G-banners">
+  <p class="G-banners__title">您曾選購<a href="#">膜拜酒</a>類型，推薦您以下活動</p>
+  <div class="owl-carousel owl-theme G-banners__items G-banners__banners3">
+      <div class="item">
+        <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_01-bf8efa10.jpg" alt="..."></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_02-488aa519.jpg" alt="..."></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="/iCheers-WebRevision/images/banner_425x293_03-6d415834.jpg" alt="..."></a>
+      </div>
+  </div>
+</section>
+<!-- banner 二個 -->
+<section class="G-banners">
+  <p class="G-banners__title">您曾選購<a href="#">膜拜酒</a>類型，推薦您以下活動</p>
+  <div class="owl-carousel owl-theme G-banners__items G-banners__banners2">
+      <div class="item">
+        <a href="#">
+          <img class="--fordesk" src="/iCheers-WebRevision/images/banner_1000x500_01-82f6edb5.jpg" alt="...">
+          <img class="--formobile" src="/iCheers-WebRevision/images/banner_425x293_05-35f390f7.jpg" alt="...">
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <img class="--fordesk" src="/iCheers-WebRevision/images/banner_1000x500_02-df8bd1c0.jpg" alt="...">
+          <img class="--formobile" src="/iCheers-WebRevision/images/banner_425x293_01-bf8efa10.jpg" alt="...">
+        </a>
+      </div>
+  </div>
+</section>
+<!-- banner 一個 -->
+<section class="G-banners">
+  <div class="G-banners__wrap">
+    <p class="G-banners__title">您曾選購<a href="#">膜拜酒</a>類型，推薦您以下活動</p>
+    <div class="owl-carousel owl-theme G-banners__items G-banners__abanner">
+        <div class="item">
+          <a href="#">
+            <img class="--fordesk" src="/iCheers-WebRevision/images/banner_1000x500_01-82f6edb5.jpg" alt="...">
+            <img class="--formobile" src="/iCheers-WebRevision/images/banner_425x293_05-35f390f7.jpg" alt="...">
+          </a>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="footer__items">
+        <div class="footer__item">
+            <div class="footer__item__title footer__item__title--close" data-target="list1">客戶服務<span class="icon_chevron"></span></div>
+            <ul class="footer__item__contents --close" id="list1">
+                <li class="footer__item__content"><a href="#">新手上路下單教學</a></li>
+                <li class="footer__item__content"><a href="#">代客儲酒</a></li>
+                <li class="footer__item__content"><a href="#">訂單配送進度查詢</a></li>
+                <li class="footer__item__content"><a href="#">取消訂閱電子報</a></li>
+                <li class="footer__item__content"><a href="#">更改配送地址</a></li>
+                <li class="footer__item__content"><a href="#">瀏覽清單</a></li>
+                <li class="footer__item__content"><a href="#">追蹤清單</a></li>
+                <li class="footer__item__content"><a href="#">Q&A 常見問題</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item__title footer__item__title--close" data-target="list2">商務合作<span class="icon_chevron"></span></div>
+            <ul class="footer__item__contents --close" id="list2">
+                <li class="footer__item__content"><a href="#">企業採購</a></li>
+                <li class="footer__item__content"><a href="#">異業合作</a></li>
+                <li class="footer__item__content"><a href="#">廠商上架</a></li>
+                <li class="footer__item__content"><a href="#">人才招募</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item__title footer__item__title--close" data-target="list3">關於我們<span class="icon_chevron"></span></div>
+            <ul class="footer__item__contents --close" id="list3">
+                <li class="footer__item__content"><a href="#">企業使命</a></li>
+                <li class="footer__item__content"><a href="#">當日配/快速到貨說明</a></li>
+                <li class="footer__item__content"><a href="#">酒窖環境一覽</a></li>
+                <li class="footer__item__content"><a href="#">品質保證</a></li>
+                <li class="footer__item__content"><a href="#">條款與細則</a></li>
+                <li class="footer__item__content"><a href="#">隱私條款</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item__title">聯絡我們</div>
+            <ul class="footer__item__contents">
+                <li class="footer__item__content">服務專線：02-2926-3667</li>
+                <li class="footer__item__content"><a href="#">客服 E-mail：service@icheers.tw</a></li>
+                <li class="footer__item__content">服務時間：<br><span>星期一~五&nbsp;&nbsp;9:00~12:00&nbsp;13:00~18:00&nbsp;&nbsp;</span><span>國定假日除外</span></li>
+                <li class="footer__item__content">傳真電話：02-2924-6220</li>
+                <li class="footer__item__content">
+                    <a class="footer__item__content--socialmedia" href="#"><img src="/iCheers-WebRevision/images/icon_line-1a4bb625.svg" alt="加入官方Line"></a>
+                    <a class="footer__item__content--socialmedia" href="#"><img src="/iCheers-WebRevision/images/icon_facebook-1dd023ea.svg" alt="加入官方Facebook"></a>
+                    <a class="footer__item__content--socialmedia" href="#"><img src="/iCheers-WebRevision/images/icon_instagram-4eb06918.svg" alt="加入官方Instagram"></a>
+                </li>
+            </ul>
+            <div class="footer__copyright">
+                <span>版權宣告</span> 
+                佳釀股份有限公司 統一編號 29081831
+                <span>Copyright @ 2024 iCheers.tw 版權所有 轉載必究</span>
+            </div>
+        </div>
+        
+    </div>
+   
+    
+</footer>
+    <div class="warning">
+    <p><span>飲酒過量有礙身體健康</span><span>禁止酒駕</span></p>
+</div>    
+    
+  </body>
+</html>
